@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import Routing from "./components/Routing";
 
 const AppWrapper = styled.div`
     text-align: center;
@@ -13,6 +14,9 @@ class App extends Component {
         return (
             <AppWrapper>
                 <AppTitle>rörvik reactjs project</AppTitle>
+                <div>
+                    <Routing />
+                </div>
             </AppWrapper>
         );
     }
