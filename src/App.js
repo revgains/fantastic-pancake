@@ -8,7 +8,7 @@ const AppWrapper = styled.div`
     height: 100%;
 `;
 const AppTitle = styled.h1`
-    color: fuchsia;
+    color: hsl(140, 100%, 75%);
     font-weight: 600;
     padding: 8px;
 `;
@@ -16,7 +16,11 @@ const AppTitle = styled.h1`
 const AppHeader = styled.div`
     display: flex;
     justify-content: space-evenly;
-    background-color: black;
+    background: linear-gradient(
+        to right,
+        hsl(335, 100%, 75%),
+        hsl(185, 100%, 75%)
+    );
 `;
 
 const AppBody = styled.div`
