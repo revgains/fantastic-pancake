@@ -10,7 +10,7 @@ const AppWrapper = styled.div`
 `;
 const AppTitle = styled.h2`
   margin: auto;
-  color: blue;
+  color: #0024aa;
   font-weight: 600;
   padding: 8px;
 `;
@@ -43,20 +43,24 @@ const AppBody = styled.div`
   height: 100%;
 `;
 
-const Navbar = styled.ul`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-`;
-
-const NavLink = styled.li`
-  list-style-type: none;
+const NavLink = styled(Link)`
   margin: auto;
-  &:hover {
-    background: rgba(255, 255, 255, 0.5);
-  }
+  width: 104px;
+  height: 21px;
+  color: #0024aa;
+  font-size: 16px;
+  font-family: Futura-MediumItalic;
+  font-weight: mediumitalic;
+  text-align: center;
+  &:focus,
+  &:hover,
+  &:visited,
+  &:link,
   &:active {
-    background: white;
+    text-decoration: none;
+  }
+  &:hover  {
+    border-bottom: 2px solid #0024aa;
   }
 `;
 
@@ -67,18 +71,10 @@ class App extends Component {
         <AppHeader>
           <AppTitle>RÖRVIK</AppTitle>
           <AppSubTitle>RENT SEASIDE CABINS IN ÅLAND</AppSubTitle>
-          <NavLink>
-            <Link to="/cabins">Cottages</Link>
-          </NavLink>
-          <NavLink>
-            <Link to="/activities">Activities</Link>
-          </NavLink>
-          <NavLink>
-            <Link to="/pricing">Pricing</Link>
-          </NavLink>
-          <NavLink>
-            <Link to="/contact">Contacts</Link>
-          </NavLink>
+          <NavLink to="/cabins">Cottages</NavLink>
+          <NavLink to="/activities">Activities</NavLink>
+          <NavLink to="/pricing">Pricing</NavLink>
+          <NavLink to="/contact">Contacts</NavLink>
         </AppHeader>
         <AppBody>
           <Routing />
