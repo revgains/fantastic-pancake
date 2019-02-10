@@ -8,22 +8,33 @@ const AppWrapper = styled.div`
   flex-direction: column;
   height: 100%;
 `;
-const AppTitle = styled.h1`
-  color: hsl(140, 100%, 75%);
+const AppTitle = styled.h2`
+  margin: auto;
+  color: blue;
   font-weight: 600;
   padding: 8px;
 `;
 
+const AppSubTitle = styled.p`
+  @import url('https://fonts.googleapis.com/css?family=Nunito');
+  width: 104px;
+  height: 32px;
+  color: #333333;
+  font-size: 11px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 16px;
+  margin: auto;
+`;
+
 const AppHeader = styled.div`
   display: flex;
-  text-align: center;
-  justify-content: center;
-  flex-direction: column;
-  background: linear-gradient(
-    to right,
-    hsl(335, 100%, 75%),
-    hsl(185, 100%, 75%)
-  );
+  justify-content: space-evenly;
+  border-bottom: 1px solid lightgray;
+  width: 100%;
+  height: 82px;
+  background: #ffffff;
 `;
 
 const AppBody = styled.div`
@@ -40,10 +51,7 @@ const Navbar = styled.ul`
 
 const NavLink = styled.li`
   list-style-type: none;
-  padding: 6px;
-  border-left: solid 3px white;
-  border-right: solid 3px white;
-  border-radius: 24px;
+  margin: auto;
   &:hover {
     background: rgba(255, 255, 255, 0.5);
   }
@@ -57,18 +65,20 @@ class App extends Component {
     return (
       <AppWrapper>
         <AppHeader>
-          <AppTitle>rörvik reactjs project</AppTitle>
-          <Navbar>
-            <NavLink>
-              <Link to="/">Home</Link>
-            </NavLink>
-            <NavLink>
-              <Link to="/cabins">Cabins</Link>
-            </NavLink>
-            <NavLink>
-              <Link to="/contact">Contact</Link>
-            </NavLink>
-          </Navbar>
+          <AppTitle>RÖRVIK</AppTitle>
+          <AppSubTitle>RENT SEASIDE CABINS IN ÅLAND</AppSubTitle>
+          <NavLink>
+            <Link to="/cabins">Cottages</Link>
+          </NavLink>
+          <NavLink>
+            <Link to="/activities">Activities</Link>
+          </NavLink>
+          <NavLink>
+            <Link to="/pricing">Pricing</Link>
+          </NavLink>
+          <NavLink>
+            <Link to="/contact">Contacts</Link>
+          </NavLink>
         </AppHeader>
         <AppBody>
           <Routing />

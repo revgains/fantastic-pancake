@@ -1,0 +1,44 @@
+{
+  "cabins": [
+    {
+      "name": "Paviljong",
+      "description": "Infomation about them cabins",
+      "image": ""
+    },
+    {
+      "name": "Klippan",
+      "description": "Infomation about them cabins",
+      "image": ""
+    },
+    {
+      "name": "Flundra",
+      "description": "Infomation about them cabins",
+      "image": ""
+    },
+    {
+      "name": "Sik",
+      "description": "Infomation about them cabins",
+      "image": ""
+    },
+    {
+      "name": "Abborre",
+      "description": "Infomation about them cabins",
+      "image": ""
+    },
+    {
+      "name": "Gädda",
+      "description": "Infomation about them cabins",
+      "image": ""
+    },
+    {
+      "name": "Skimpa",
+      "description": "Infomation about them cabins",
+      "image": ""
+    },
+    {
+      "name": "Öring",
+      "description": "Infomation about them cabins",
+      "image": ""
+    }
+  ]
+}
