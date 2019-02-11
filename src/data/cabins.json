@@ -1,44 +1,52 @@
 {
-  "cabins": [
-    {
-      "name": "Paviljong",
-      "description": "Infomation about them cabins",
-      "image": ""
-    },
-    {
-      "name": "Klippan",
-      "description": "Infomation about them cabins",
-      "image": ""
-    },
-    {
-      "name": "Flundra",
-      "description": "Infomation about them cabins",
-      "image": ""
-    },
-    {
-      "name": "Sik",
-      "description": "Infomation about them cabins",
-      "image": ""
-    },
-    {
-      "name": "Abborre",
-      "description": "Infomation about them cabins",
-      "image": ""
-    },
-    {
-      "name": "Gädda",
-      "description": "Infomation about them cabins",
-      "image": ""
-    },
-    {
-      "name": "Skimpa",
-      "description": "Infomation about them cabins",
-      "image": ""
-    },
-    {
-      "name": "Öring",
-      "description": "Infomation about them cabins",
-      "image": ""
-    }
-  ]
+    "cabins": [
+        {
+            "name": "Paviljong",
+            "description": "Infomation about them cabins",
+            "image": "paviljong-card-img.jpg",
+            "beds": "4"
+        },
+        {
+            "name": "Klippan",
+            "description": "Infomation about them cabins",
+            "image": "klippan-card-img.jpg",
+            "beds": "4"
+        },
+        {
+            "name": "Flundra",
+            "description": "Infomation about them cabins",
+            "image": "klippan-card-img.jpg",
+            "beds": "3"
+        },
+        {
+            "name": "Sik",
+            "description": "Infomation about them cabins",
+            "image": "paviljong-card-img.jpg",
+            "beds": "3"
+        },
+        {
+            "name": "Abborre",
+            "description": "Infomation about them cabins",
+            "image": "klippan-card-img.jpg",
+            "beds": "3"
+        },
+        {
+            "name": "Gädda",
+            "description": "Infomation about them cabins",
+            "image": "paviljong-card-img.jpg",
+            "beds": "3"
+        },
+        {
+            "name": "Skimpa",
+            "description": "Infomation about them cabins",
+            "image": "klippan-card-img.jpg",
+            "beds": "3"
+        },
+        {
+            "name": "Öring",
+            "description": "Infomation about them cabins",
+            "image": "paviljong-card-img.jpg",
+            "beds": "3"
+        }
+    ]
 }
