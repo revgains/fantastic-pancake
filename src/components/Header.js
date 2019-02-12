@@ -68,6 +68,7 @@ const Header = () => {
                 </Link>
             </Logo>
             <AppSubTitle>rent seaside cabins in åland</AppSubTitle>
+            <NavLink to="/">Home</NavLink>
             <NavLink to="/cabins">Cottages</NavLink>
             <NavLink to="/activities">Activities</NavLink>
             <NavLink to="/pricing">Pricing</NavLink>

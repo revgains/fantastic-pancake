@@ -4,49 +4,49 @@
             "name": "Paviljong",
             "description": "Infomation about them cabins",
             "image": "paviljong-card-img.jpg",
-            "beds": "4"
+            "beds": "4 beds"
         },
         {
             "name": "Klippan",
             "description": "Infomation about them cabins",
             "image": "klippan-card-img.jpg",
-            "beds": "4"
+            "beds": "4 beds"
         },
         {
             "name": "Flundra",
             "description": "Infomation about them cabins",
             "image": "klippan-card-img.jpg",
-            "beds": "3"
+            "beds": "3 beds"
         },
         {
             "name": "Sik",
             "description": "Infomation about them cabins",
             "image": "paviljong-card-img.jpg",
-            "beds": "3"
+            "beds": "3 beds"
         },
         {
             "name": "Abborre",
             "description": "Infomation about them cabins",
             "image": "klippan-card-img.jpg",
-            "beds": "3"
+            "beds": "3 beds"
         },
         {
             "name": "Gädda",
             "description": "Infomation about them cabins",
             "image": "paviljong-card-img.jpg",
-            "beds": "3"
+            "beds": "3 beds"
         },
         {
             "name": "Skimpa",
             "description": "Infomation about them cabins",
             "image": "klippan-card-img.jpg",
-            "beds": "3"
+            "beds": "3 beds"
         },
         {
             "name": "Öring",
             "description": "Infomation about them cabins",
             "image": "paviljong-card-img.jpg",
-            "beds": "3"
+            "beds": "3 beds"
         }
     ]
 }
