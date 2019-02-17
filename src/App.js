@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Routing from './components/Routing';
 import Header from './components/Header';
 import { createGlobalStyle } from 'styled-components';
+import Footer from './components/Footer';
 
 const GlobalStyles = createGlobalStyle`
     body {
@@ -14,7 +15,7 @@ const GlobalStyles = createGlobalStyle`
 const AppWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100%;
+  min-height: 100vh;
 `;
 
 const AppBody = styled.div`
@@ -22,6 +23,7 @@ const AppBody = styled.div`
   justify-content: center;
   margin-top: 80px;
   height: 100%;
+  flex: 1;
 `;
 
 class App extends Component {
@@ -32,6 +34,7 @@ class App extends Component {
         <AppBody>
           <Routing />
         </AppBody>
+        <Footer/>
       </AppWrapper>
     );
   }
