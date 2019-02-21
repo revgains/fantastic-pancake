@@ -2,7 +2,7 @@
     "cabins": [
         {
             "name": "Paviljong",
-            "description": "Infomation about them cabins",
+            "description": "Infomation about them cabins, we have the best cabins out there, no one makes cabins like us. Just ask the chinese.",
             "image": "paviljong-card-img.jpg",
             "beds": "4 beds",
             "id": "c1"

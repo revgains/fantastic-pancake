@@ -5,12 +5,13 @@ import styled from "styled-components";
 const CardWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 381.65px;
     height: 428px;
     border: 1px ${colors.grey200} solid;
     background: ${colors.white};
     margin: 12px;
+    padding-bottom: 8px;
 `;
 
 const CardImg = styled.img`
@@ -41,6 +42,8 @@ const CabinName = styled.h4`
     font-size: 18px;
     font-weight: 500;
     padding-left: 20px;
+    margin-top: 8px;
+    margin-bottom: 4px;
 `;
 
 const P = styled.p`
@@ -53,6 +56,8 @@ const P = styled.p`
     line-height: 22px;
     padding-left: 20px;
     max-width: 100%;
+    margin-top: 8px;
+    margin-bottom: 12px;
 `;
 
 const Card = ({ image, name, beds, description }) => {

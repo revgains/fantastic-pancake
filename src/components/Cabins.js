@@ -12,6 +12,7 @@ export const CabinsWrapper = styled.div`
     padding: 120px;
     padding-top: 64px;
     flex-direction: column;
+    flex: 1;
 `;
 
 export const CardTitle = styled.h1`

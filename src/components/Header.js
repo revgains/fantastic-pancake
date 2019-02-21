@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import colors from "../theme/colors";
 import headerLogo from "../images/rorvik-logo.svg";
+import DropdownButton from "./DropdownButton";
 
 const Logo = styled.div`
     margin: auto;
@@ -73,6 +74,7 @@ const Header = () => {
             <NavLink to="/activities">Activities</NavLink>
             <NavLink to="/pricing">Pricing</NavLink>
             <NavLink to="/contact">Contacts</NavLink>
+            <DropdownButton />
         </AppHeader>
     );
 };
