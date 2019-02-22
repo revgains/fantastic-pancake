@@ -39,7 +39,7 @@ const LangTxt = styled.p`
     margin: auto;
 `;
 
-const Arrow = styled.div`
+const Icon = styled.div`
     margin: auto;
     color: ${colors.grey400};
 `;
@@ -51,9 +51,9 @@ class DropdownButton extends Component {
             <FlagBtn>
                 <Flag src={fin} alt="fin-flag" />
                 <LangTxt>FIN</LangTxt>
-                <Arrow>
+                <Icon>
                     <FontAwesomeIcon icon="angle-down" />
-                </Arrow>
+                </Icon>
             </FlagBtn>
         );
     }
