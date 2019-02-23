@@ -8,7 +8,6 @@ export const CabinsWrapper = styled.div`
   display: flex;
   background: ${colors.grey100};
   width: 100%;
-  height: 1440px;
   padding: 120px;
   padding-top: 64px;
   flex-direction: column;
