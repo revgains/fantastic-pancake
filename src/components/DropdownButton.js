@@ -11,7 +11,7 @@ library.add(faAngleDown);
 
 const BtnImg = styled.img`
   height: 20px;
-  widht: 34px;
+  width: 34px;
   margin: auto;
   border: 1px solid ${colors.grey200};
   border-radius: 4px;

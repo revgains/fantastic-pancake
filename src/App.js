@@ -4,6 +4,7 @@ import Routing from './components/Routing';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import colors from './theme/colors';
+import BookingButtonMobile from './components/FixedButton'
 
 const AppWrapper = styled.div`
   display: flex;

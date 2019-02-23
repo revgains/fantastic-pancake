@@ -3,6 +3,7 @@ import data from '../data/cabins.json';
 import Card from './Card';
 import colors from '../theme/colors';
 import styled from 'styled-components';
+import BookingButtonMobile from './FixedButton';
 
 export const CabinsWrapper = styled.div`
   display: flex;
@@ -45,6 +46,7 @@ const Cabins = () => {
           );
         })}
       </CardWrapper>
+      
     </CabinsWrapper>
   );
 };
