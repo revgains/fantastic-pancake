@@ -1,7 +1,7 @@
 {
   "main.css": "/static/css/main.0e07bd8d.chunk.css",
-  "main.js": "/static/js/main.29a14d7f.chunk.js",
-  "main.js.map": "/static/js/main.29a14d7f.chunk.js.map",
+  "main.js": "/static/js/main.d93bacd7.chunk.js",
+  "main.js.map": "/static/js/main.d93bacd7.chunk.js.map",
   "static/js/1.22fcd775.chunk.js": "/static/js/1.22fcd775.chunk.js",
   "static/js/1.22fcd775.chunk.js.map": "/static/js/1.22fcd775.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
@@ -17,6 +17,6 @@
   "static/media/rorvik-logo.svg": "/static/media/rorvik-logo.410518e1.svg",
   "static/css/main.0e07bd8d.chunk.css.map": "/static/css/main.0e07bd8d.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.acea2cfbec6316760371065e2017f424.js": "/precache-manifest.acea2cfbec6316760371065e2017f424.js",
+  "precache-manifest.f550f0d9553ae9c2394a7708841b129c.js": "/precache-manifest.f550f0d9553ae9c2394a7708841b129c.js",
   "service-worker.js": "/service-worker.js"
 }
