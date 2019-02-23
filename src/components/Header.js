@@ -7,6 +7,8 @@ import DropdownButton from './DropdownButton';
 
 const Logo = styled.div`
   margin: auto;
+  margin-left: 16px;
+  margin-right: 8px;
   height: 32px;
   width: 204px;
   padding-left: 16px;
@@ -18,7 +20,7 @@ const Logo = styled.div`
   }
 `;
 
-const AppSubTitle = styled.p`
+const AppSubTitle = styled.div`
   @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
   width: 104px;
   height: 32px;
@@ -29,11 +31,15 @@ const AppSubTitle = styled.p`
   text-transform: uppercase;
   line-height: 16px;
   margin: auto;
-  margin-left: 4px;
+  margin-left: 8px;
+  margin-right: 32px;
+  position: relative;
+  left: -48px;
   padding-top: 4px;
   @media (max-width: 768px) {
     margin: auto;
     margin-left: 16px;
+    left: 0px;
     white-space: nowrap;
   }
 `;
@@ -55,8 +61,9 @@ const AppHeader = styled.div`
 const NavLink = styled(Link)`
   @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
   width: 104px;
-  height: 99%;
+  height: 94%;
   margin: auto;
+  margin-right: 16px;
   line-height: 5em;
   color: ${colors.dark};
   font-size: 16px;
@@ -78,6 +85,7 @@ const NavLink = styled(Link)`
 const NavElements = styled.div`
   display: flex;
   margin-right: 24px;
+  justify-content: space-evenly;
 
   @media (max-width: 768px) {
     display: none;
