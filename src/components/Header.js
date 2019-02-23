@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import colors from '../theme/colors';
 import headerLogo from '../images/rorvik-logo.svg';
 import DropdownButton from './DropdownButton';
+import DropMenu from './DropMenu';
 
 const Logo = styled.div`
   margin: auto;
@@ -34,13 +35,22 @@ const AppSubTitle = styled.div`
   margin-left: 8px;
   margin-right: 32px;
   position: relative;
-  left: -48px;
   padding-top: 4px;
   @media (max-width: 768px) {
     margin: auto;
     margin-left: 16px;
     left: 0px;
     white-space: nowrap;
+  }
+`;
+
+const TitleContainer = styled.div`
+  display: flex;
+  margin: auto;
+  margin-left: 16px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
   }
 `;
 
@@ -54,7 +64,6 @@ const AppHeader = styled.div`
   background: ${colors.white};
   @media (max-width: 768px) {
     margin: auto;
-    flex-direction: column;
   }
 `;
 
@@ -92,15 +101,18 @@ const NavElements = styled.div`
   }
 `;
 
-const Header = () => {
+const Header = props => {
   return (
     <AppHeader>
-      <Logo>
-        <Link to="/">
-          <img src={headerLogo} alt="rorvik-logo" />
-        </Link>
-      </Logo>
-      <AppSubTitle>rent seaside cabins in åland</AppSubTitle>
+      <TitleContainer>
+        <Logo>
+          <Link to="/">
+            <img src={headerLogo} alt="rorvik-logo" />
+          </Link>
+        </Logo>
+        <AppSubTitle>rent seaside cabins in åland</AppSubTitle>
+      </TitleContainer>
+
       <NavElements>
         <NavLink to="/">Home</NavLink>
         <NavLink to="/cabins">Cottages</NavLink>
@@ -109,6 +121,7 @@ const Header = () => {
         <NavLink to="/contact">Contacts</NavLink>
         <DropdownButton />
       </NavElements>
+      <DropMenu />
     </AppHeader>
   );
 };

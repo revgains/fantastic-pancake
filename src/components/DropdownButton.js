@@ -9,7 +9,7 @@ import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
 library.add(faAngleDown);
 
-const Flag = styled.img`
+const BtnImg = styled.img`
   height: 20px;
   widht: 34px;
   margin: auto;
@@ -51,10 +51,10 @@ class DropdownButton extends Component {
   render() {
     return (
       <FlagBtn>
-        <Flag src={fin} alt="fin-flag" />
+        <BtnImg src={fin} alt="fin-flag" />
         <LangTxt>FIN</LangTxt>
         <Icon>
-          <FontAwesomeIcon icon="angle-down" />
+          <FontAwesomeIcon icon={'angle-down'} />
         </Icon>
       </FlagBtn>
     );
