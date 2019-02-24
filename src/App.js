@@ -30,6 +30,7 @@ class App extends Component {
           <Routing />
         </AppBody>
         <Footer />
+        <BookingButtonMobile />
       </AppWrapper>
     );
   }

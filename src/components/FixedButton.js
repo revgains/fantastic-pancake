@@ -12,12 +12,13 @@ const ButtonWrapper = styled.div`
     display: none;
     @media (max-width: 768px) {
         background-color: ${colors.blue};
-        height: 72px;
-        padding-left: 32px;
         display: flex;
-        position: relative;
-        bottom: 0;
+        height: 72px;
         flex: 0 0 auto;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
     }
 `;
 
@@ -33,24 +34,25 @@ const Label = styled.h1`
     font-size: 18px;
     font-family: JosefinSans-SemiBold;
     font-weight: 600;
-    margin-bottom: 0px;
+    margin: 24px 16px 0px 32px;
 `
 
 const Description = styled.h2`
     color: #A8AFC8;
     font-size: 14px;
     font-family: OpenSans;
-    line-height: 22px;
     font-weight: 300;
-    margin-top: 0px;
+    margin: 0px 16px 16px 32px;    
 `
 
 const Icon = styled.div`
    color: ${colors.white};
    display: flex;
    margin: auto;
-   margin-right: 32px;
+   margin-right: 24px;
+   font-size: 32px;
 `
+
 
 const BookingButtonMobile = () => {
     return (
