@@ -9,7 +9,6 @@ const FooterWrapper= styled.div`
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-    background: pink;
     height: 504px;
     width: 100%;
 `;
@@ -22,7 +21,6 @@ const FooterTitle= styled.div`
 `;
 
 const ListContainer= styled.div`
-    background: papayawhip;
     flex-direction: row;
     display: flex;
     justify-content: space-evenly;
@@ -37,7 +35,6 @@ const SubTitleWrapper= styled.div`
     font-weight: 500;
     height: 24px;
     width: 73px;
-    background: blue;
 `;
 
 const ListElements= styled.div`
@@ -50,7 +47,6 @@ const ListElements= styled.div`
     height: 22px;
     line-height: 22px;
     width: 72px;
-    background: green;
     margin: 16px;
     display: flex;
     flex-wrap: wrap;
@@ -81,7 +77,6 @@ const ExtraElements= styled.div`
     font-size: 16px;
     font-weight: mediumitalic;
     height: 64px;
-    background: rebeccapurple;
 `;
 
 const Footer = () => {
@@ -112,7 +107,9 @@ const Footer = () => {
             </ContactElements>
             </ListContainer>
             <ExtraElements>
-                Seuraa Meitä <ListItem>Facebook</ListItem> <ListItem>Insta</ListItem>
+              <ListItem>Seuraa Meitä</ListItem>
+              <ListItem>Facebook</ListItem> 
+              <ListItem>Insta</ListItem>
             </ExtraElements>
         </FooterWrapper>
     )
