@@ -9,6 +9,10 @@ export const H1 = styled.h1`
     font-weight: normal;
 `;
 
+export const WhiteH1 = styled(H1)`
+    color: ${colors.white};
+`;
+
 export const H2 = styled.h2`
     @import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
     font-family: "Josefin Sans", sans-serif;
@@ -40,21 +44,21 @@ export const LP = styled.p`
 export const MP = styled.p`
     @import url("https://fonts.googleapis.com/css?family=Open+Sans");
     font-family: "Open Sans", sans-serif;
-    width: 185px;
-    height: 36px;
-    color: #333333;
-    font-size: 24px;
-    line-height: 36px;
+    width: 162px;
+    height: 32px;
+    color: ${colors.dark};
+    font-size: 18px;
+    line-height: 32px;
 `;
 
 export const SP = styled.p`
     @import url("https://fonts.googleapis.com/css?family=Open+Sans");
     font-family: "Open Sans", sans-serif;
-    width: 185px;
-    height: 36px;
-    color: #333333;
-    font-size: 24px;
-    line-height: 36px;
+    width: 107px;
+    height: 22px;
+    color: ${colors.dark};
+    font-size: 14px;
+    line-height: 22px;
 `;
 
-export default { H1, H2, H3 };
+export default { H1, H2, H3, LP, MP, SP };
