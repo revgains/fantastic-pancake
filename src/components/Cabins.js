@@ -3,27 +3,16 @@ import data from "../data/cabins.json";
 import Card from "./Card";
 import colors from "../theme/colors";
 import styled from "styled-components";
+import { H3 } from "../theme/typography";
 
 export const CabinsWrapper = styled.div`
     display: flex;
     background: ${colors.grey100};
     width: 100%;
-    height: 1440px;
     padding: 120px;
     padding-top: 64px;
     flex-direction: column;
     flex: 1;
-`;
-
-export const CardTitle = styled.h1`
-    @import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
-    width: 327px;
-    height: 86px;
-    color: ${colors.dark};
-    font-size: 36px;
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 600;
-    padding-left: 12px;
 `;
 
 export const CardWrapper = styled.div`
@@ -33,7 +22,7 @@ export const CardWrapper = styled.div`
 const Cabins = () => {
     return (
         <CabinsWrapper>
-            <CardTitle>Accommodations in Rörvik</CardTitle>
+            <H3>Accommodations in Rörvik</H3>
             <CardWrapper>
                 {data.cabins.map(cabin => {
                     return (

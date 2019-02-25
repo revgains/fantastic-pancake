@@ -2,16 +2,8 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import Routing from "./components/Routing";
 import Header from "./components/Header";
-import { createGlobalStyle } from "styled-components";
 import Footer from "./components/Footer";
 import colors from "./theme/colors";
-
-const GlobalStyles = createGlobalStyle`
-    body {
-        @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans');
-        font-family: 'Open Sans', sans-serif;
-    }
-`;
 
 const AppWrapper = styled.div`
     display: flex;
