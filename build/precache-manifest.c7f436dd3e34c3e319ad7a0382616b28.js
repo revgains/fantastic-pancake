@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/static/media/hiking-card-img.5fffb181.jpg"
   },
   {
-    "revision": "4293b1d07586ed99ed10",
-    "url": "/static/css/main.9285747c.chunk.css"
+    "revision": "e26b969eb1d7888383c1",
+    "url": "/static/css/main.0e07bd8d.chunk.css"
   },
   {
-    "revision": "c59a50b627f367507bdf",
-    "url": "/static/js/1.c59a50b6.chunk.js"
+    "revision": "fa4e595fa073ee7c385a",
+    "url": "/static/js/1.fa4e595f.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -20,16 +20,16 @@ self.__precacheManifest = [
     "url": "/static/media/footerbg.84fc190a.png"
   },
   {
-    "revision": "72c405896ef399dc62d2a0bd79230ccf",
-    "url": "/static/media/rorvik-logo.72c40589.svg"
+    "revision": "410518e18a0d58c2ee04bb89d0ca8850",
+    "url": "/static/media/rorvik-logo.410518e1.svg"
   },
   {
     "revision": "3e7e642bbb11dc150454304261f591c9",
     "url": "/static/media/fishing-card-img.3e7e642b.jpg"
   },
   {
-    "revision": "4293b1d07586ed99ed10",
-    "url": "/static/js/main.4293b1d0.chunk.js"
+    "revision": "e26b969eb1d7888383c1",
+    "url": "/static/js/main.e26b969e.chunk.js"
   },
   {
     "revision": "11964860c88854329f491da8ce585d56",
@@ -52,7 +52,7 @@ self.__precacheManifest = [
     "url": "/static/media/sup-card-img.6ae88d75.jpg"
   },
   {
-    "revision": "5b2410af5ee242f592d4be664cdfda2b",
+    "revision": "224fe18d99d88bdb88f21ea8d8bfaf30",
     "url": "/index.html"
   }
 ];

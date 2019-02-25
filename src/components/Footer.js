@@ -18,6 +18,7 @@ const FooterTitle= styled.div`
     height: 155px;
     width: 100%;
     background-image: url(${background});
+    background-size: 100%;
 `;
 
 const ListContainer= styled.div`

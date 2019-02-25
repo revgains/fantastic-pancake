@@ -37,4 +37,24 @@ export const LP = styled.p`
     line-height: 36px;
 `;
 
+export const MP = styled.p`
+    @import url("https://fonts.googleapis.com/css?family=Open+Sans");
+    font-family: "Open Sans", sans-serif;
+    width: 185px;
+    height: 36px;
+    color: #333333;
+    font-size: 24px;
+    line-height: 36px;
+`;
+
+export const SP = styled.p`
+    @import url("https://fonts.googleapis.com/css?family=Open+Sans");
+    font-family: "Open Sans", sans-serif;
+    width: 185px;
+    height: 36px;
+    color: #333333;
+    font-size: 24px;
+    line-height: 36px;
+`;
+
 export default { H1, H2, H3 };

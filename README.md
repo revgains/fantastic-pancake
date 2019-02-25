@@ -1,7 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-Below you will find some information on how to perform common tasks.<br>
-You can find the most recent version of this guide [here](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md).
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e8868ea1-e521-4980-ba7c-0b0d3e7ded4a/deploy-status)](https://app.netlify.com/sites/focused-visvesvaraya-3ce350/deploys)
 
 ## Table of Contents
 
