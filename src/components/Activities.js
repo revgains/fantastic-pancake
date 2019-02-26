@@ -3,13 +3,14 @@ import { CabinsWrapper, CardTitle, CardWrapper } from "./Cabins";
 import data from "../data/activities.json";
 import styled from "styled-components";
 import Card from "./Card";
+import { H3 } from "../theme/typography";
 
 const ActivitiesWrapper = styled(CabinsWrapper)``;
 
 const Activities = () => {
     return (
         <ActivitiesWrapper>
-            <CardTitle>Activities in Rörvik</CardTitle>
+            <H3>Activities in Rörvik</H3>
             <CardWrapper>
                 {data.activities.map(activity => {
                     return (
