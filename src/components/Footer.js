@@ -1,16 +1,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from "styled-components";
+import colors from '../theme/colors';
 import cabin_data from '../data/cabins.json';
 import activities_data from '../data/activities.json';
 import background from '../images/footerbg.png';
 
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBook } from '@fortawesome/free-solid-svg-icons';
+import {  } from '@fortawesome/free-solid-svg-icons';
+
+library.add(faBook);
+
 const FooterWrapper= styled.div`
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-direction: column;
     height: 504px;
     width: 100%;
+
+    @media (max-width: 768px) {
+        
+      }
 `;
 
 const FooterTitle= styled.div`
@@ -18,13 +30,22 @@ const FooterTitle= styled.div`
     width: 100%;
     background-image: url(${background});
     background-size: 100%;
+
+    @media (max-width: 768px) {
+        
+      }
 `;
 
 const ListContainer= styled.div`
     flex-direction: row;
     display: flex;
     justify-content: space-evenly;
-    height: 285px;
+    height: 285px; 
+    background-color: yellow;
+
+    @media (max-width: 768px) {
+        
+      }
 `;
 
 const SubTitleWrapper= styled.div`
@@ -35,6 +56,10 @@ const SubTitleWrapper= styled.div`
     font-weight: 500;
     height: 24px;
     width: 73px;
+
+    @media (max-width: 768px) {
+        
+      }
 `;
 
 const ListElements= styled.div`
@@ -48,12 +73,21 @@ const ListElements= styled.div`
     line-height: 22px;
     width: 72px;
     margin: 16px;
-    display: flex;
-    flex-wrap: wrap;
+    background-color: red;
+
+    @media (max-width: 768px) {
+        
+      }
 `;
 
 const ListItem= styled.li`
     flex: 1;
+    margin-right: 20px;
+    background-color: green;
+
+    @media (max-width: 768px) {
+        
+      }
 `;
 
 const ContactElements= styled.div`
@@ -66,10 +100,16 @@ const ContactElements= styled.div`
     height: 16px;
     width: 16px;
     margin: 16px;
+
+    @media (max-width: 768px) {
+        
+      }
 `;
 
 const ExtraElements= styled.div`
+    background: ${colors.grey100};
     display: inline-flex;
+    
     list-style-type: none;
     color: #333333;
     @import url("https://fonts.googleapis.com/css?family=Open+Sans");
@@ -77,6 +117,10 @@ const ExtraElements= styled.div`
     font-size: 16px;
     font-weight: mediumitalic;
     height: 64px;
+
+    @media (max-width: 768px) {
+        
+      }
 `;
 
 const Footer = () => {
@@ -107,12 +151,14 @@ const Footer = () => {
             </ContactElements>
             </ListContainer>
             <ExtraElements>
-              <ListItem>Seuraa Meitä</ListItem>
-              <ListItem>Facebook</ListItem> 
-              <ListItem>Insta</ListItem>
+              <ListItem>Seuraa Meitä
+              <FontAwesomeIcon icon={faBook} />
+              <FontAwesomeIcon icon={''} />
+              </ListItem>
+              <ListItem>Käyttöehdot @2019</ListItem>
+              <ListItem>Suomi</ListItem>
             </ExtraElements>
         </FooterWrapper>
     )
 }
-
 export default Footer;
