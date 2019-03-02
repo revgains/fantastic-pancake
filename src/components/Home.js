@@ -106,6 +106,14 @@ const ActivityContent = styled.div`
     height: 684px;
     margin-top: 8px;
     margin-bottom: 8px;
+    @media (max-width: 768px) {
+        float: center;
+        width: 100%;
+        height: auto;
+        margin-top: 0px;
+        margin-bottom: 8px;
+        padding-bottom: 32px;
+        }
 `;
 
 const ActivityImage = styled.div`
@@ -115,6 +123,14 @@ const ActivityImage = styled.div`
     float: right;
     margin-top: 8px;
     margin-bottom: 8px;
+    @media (max-width: 768px) {
+        background-image: url(${background});
+        width: 100%;
+        height: 300px;
+        float: center;
+        margin-top: 8px;
+        margin-bottom: 0px;
+    }
 `
 
 const Home = () => {
