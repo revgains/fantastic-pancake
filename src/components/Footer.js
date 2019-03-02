@@ -5,13 +5,17 @@ import colors from '../theme/colors';
 import cabin_data from '../data/cabins.json';
 import activities_data from '../data/activities.json';
 import background from '../images/footerbg.png';
+import {MP, H4} from '../theme/typography';
+import DropdownButton from './DropdownButton';
+import headerLogo from '../images/rorvik-logo.svg';
+import Logo from './Header';
+
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBook } from '@fortawesome/free-solid-svg-icons';
-import {  } from '@fortawesome/free-solid-svg-icons';
+import { faFacebookSquare, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
-library.add(faBook);
+library.add(faFacebookSquare, faInstagram);
 
 const FooterWrapper= styled.div`
     display: flex;
@@ -37,126 +41,120 @@ const FooterTitle= styled.div`
 `;
 
 const ListContainer= styled.div`
+    background: ${colors.white};
     flex-direction: row;
     display: flex;
-    justify-content: space-evenly;
-    height: 285px; 
-    background-color: yellow;
-
+    justify-content: space-between;
+    
+ 
     @media (max-width: 768px) {
         
       }
 `;
 
-const SubTitleWrapper= styled.div`
-    color: #000000;
-    @import url("https://fonts.googleapis.com/css?family=Open+Sans");
-    font-family: "Open Sans", sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    height: 24px;
-    width: 73px;
-
-    @media (max-width: 768px) {
-        
-      }
-`;
 
 const ListElements= styled.div`
-    flex-direction: row;
-    list-style-type: none;
-    color: #333333;
-    @import url("https://fonts.googleapis.com/css?family=Open+Sans");
-    font-family: "Open Sans", sans-serif;
-    font-size: 14px;
-    height: 22px;
-    line-height: 22px;
-    width: 72px;
-    margin: 16px;
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    margin: 24px 72px 24px 72px;
 
     @media (max-width: 768px) {
         
       }
 `;
 
-const ListItem= styled.li`
+const ListItem= styled(Link)`
+    @import url("https://fonts.googleapis.com/css?family=Open+Sans");
+    font-family: "Open Sans", sans-serif;
     flex: 1;
     margin-right: 20px;
-    background-color: green;
-
+    color: ${colors.dark};
+    font-size: 14px;
+    line-height: 22px;
+    &:focus,
+    &:hover,
+    &:visited,
+    &:link,
+    &:active {
+     text-decoration: none;
+    }
+    &:hover {
+        cursor: pointer;
+        color: ${colors.blue};
+    }
     @media (max-width: 768px) {
         
       }
 `;
 
-const ContactElements= styled.div`
-    list-style-type: none;
-    color: #0024AA;
-    @import url("https://fonts.googleapis.com/css?family=Open+Sans");
-    font-family: "Open Sans", sans-serif;
-    font-size: 16px;
-    font-weight: solid;
-    height: 16px;
-    width: 16px;
-    margin: 16px;
-
-    @media (max-width: 768px) {
-        
-      }
+const Icon = styled(FontAwesomeIcon)`
+      margin-left: 24px;
+      font-size: 24px;
+      color: ${colors.blue};
 `;
+
 
 const ExtraElements= styled.div`
     background: ${colors.grey100};
     display: inline-flex;
-    
+    justify-content: space-evenly;
     list-style-type: none;
-    color: #333333;
-    @import url("https://fonts.googleapis.com/css?family=Open+Sans");
-    font-family: "Open Sans", sans-serif;
-    font-size: 16px;
-    font-weight: mediumitalic;
-    height: 64px;
+    justify-content: space-between;
+    margin: 0px 72px 0px 72px;
 
     @media (max-width: 768px) {
         
       }
+`;
+
+const FooterText= styled(MP)`
+      color:${colors.grey400};
+      font-size: 14px;
+      margin-bottom: auto;
+      margin-top: auto;
 `;
 
 const Footer = () => {
     return (
         <FooterWrapper>
-            <FooterTitle/>
+            <FooterTitle>
+            <Logo>
+                <Link to="/">
+                    <img src={headerLogo} alt="rorvik-logo" />
+                </Link>
+            </Logo>   
+            </FooterTitle>
             <ListContainer>
             <ListElements>
-            <SubTitleWrapper>Cottages</SubTitleWrapper>
-                {cabin_data.cabins.map(cabin => <ListItem><Link key={cabin.id} to="">{cabin.name}</Link></ListItem>)}
+            <H4>Cottages</H4>
+                {cabin_data.cabins.map(cabin => <ListItem key={cabin.id} to="/">{cabin.name}</ListItem>)}
             </ListElements>
             <ListElements>
-            <SubTitleWrapper>Activities</SubTitleWrapper>
-                {activities_data.activities.map(activity => <ListItem><Link to="">{activity.name}</Link></ListItem>)}
+            <H4>Activities</H4>
+                {activities_data.activities.map(activity => <ListItem to="/">{activity.name}</ListItem>)}
             </ListElements>
             <ListElements>
-            <SubTitleWrapper>About</SubTitleWrapper>
-                <ListItem> <Link to="">Pricing</Link></ListItem>
-                <ListItem> <Link to="">Location</Link></ListItem>
-                <ListItem> <Link to="">Company</Link></ListItem>
-                <ListItem> <Link to="">Contact</Link></ListItem>
+            <H4>About</H4>
+                <ListItem to="/">Pricing</ListItem>
+                <ListItem to="/">Location</ListItem>
+                <ListItem to="/">Company</ListItem>
+                <ListItem to="/">Contact</ListItem>
             </ListElements>
-            <ContactElements>
-            <SubTitleWrapper>Yhteystiedot</SubTitleWrapper>
-                <ListItem>564618165</ListItem>
-                <ListItem>rorvikstugor@gmail.com</ListItem>
-                <ListItem>Rörvikvägen, 22340 Geta</ListItem>
-            </ContactElements>
+            <ListElements>
+            <H4>Yhteystiedot</H4>
+                <MP> 564618165</MP>
+                <MP> rorvikstugor@gmail.com</MP>
+                <MP> Rörvikvägen, 22340 Geta</MP>
+            </ListElements>
             </ListContainer>
             <ExtraElements>
-              <ListItem>Seuraa Meitä
-              <FontAwesomeIcon icon={faBook} />
-              <FontAwesomeIcon icon={''} />
-              </ListItem>
-              <ListItem>Käyttöehdot @2019</ListItem>
-              <ListItem>Suomi</ListItem>
+              <H4>Seuraa Meitä
+              <Icon icon={faFacebookSquare} />
+              <Icon icon={faInstagram} />
+              </H4>
+            <FooterText>Käyttöehdot</FooterText>
+            <FooterText>Rörvik Stugby @ 2019</FooterText>
+              <DropdownButton/>
             </ExtraElements>
         </FooterWrapper>
     )

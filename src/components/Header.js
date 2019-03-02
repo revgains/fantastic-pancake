@@ -6,7 +6,7 @@ import headerLogo from '../images/rorvik-logo.svg';
 import DropdownButton from './DropdownButton';
 import DropMenu from './DropMenu';
 
-const Logo = styled.div`
+export const Logo = styled.div`
   margin: auto;
   margin-left: 16px;
   margin-right: 8px;

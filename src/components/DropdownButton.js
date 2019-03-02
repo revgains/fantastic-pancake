@@ -25,8 +25,9 @@ const FlagBtn = styled.button`
   height: 48px;
   border: 1px solid #d9dee9;
   border-radius: 4px;
-  margin: auto;
   background: rgba(255, 255, 255, 0);
+  margin-top: auto;
+  margin-bottom: auto;
 `;
 
 const LangTxt = styled.p`
