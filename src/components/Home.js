@@ -51,7 +51,7 @@ const CabinImage = styled.div`
 `
 
 const CabinContent = styled.div`
-    background-color: ${colors.grey200}
+    background-color: ${colors.grey100}
     float: right;
     width: 33%;
     height: 684px;
@@ -69,12 +69,12 @@ const Link = styled.div`
     color: ${colors.blue}
     font-size: 18px;
     font-family: JosefinSans-SemiBold;
-    font-weight: 600;  
+    font-weight; 600;  
     
 `
 
 const ActivityContent = styled.div`
-    background-color: ${colors.grey200}
+    background-color: ${colors.grey100}
     float: left;
     width: 33%;
     height: 684px;

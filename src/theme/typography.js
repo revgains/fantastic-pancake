@@ -28,7 +28,18 @@ export const H3 = styled.h3`
     color: ${colors.black};
     font-size: 36px;
     font-weight: 600;
+<<<<<<< HEAD
     margin: auto;
+=======
+`;
+
+export const H4 = styled.h4`
+    @import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+    font-family: "Josefin Sans", sans-serif;
+    color: #333333;
+    font-size: 18px;
+    font-weight: 600;
+>>>>>>> 151ca989dd86952e0a0f1fbd59d56a5f591d7274
 `;
 
 // LP = Large Paragraph

@@ -56,7 +56,7 @@ const Icon = styled.div`
 
 const BookingButtonMobile = () => {
     return (
-        <a href="http://www.booking.com/Share-ZSkpI9" target="_blank">
+        <a href="http://www.booking.com/Share-ZSkpI9" target="_blank" rel="noopener noreferrer">
     <ButtonWrapper>
         <TextWapper>
             <Label>Check availability</Label>
