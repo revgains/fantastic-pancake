@@ -19,6 +19,7 @@ export const H2 = styled.h2`
     color: ${colors.blue};
     font-size: 44px;
     font-weight: normal;
+    margin: 0px;
 `;
 
 export const H3 = styled.h3`
@@ -27,8 +28,7 @@ export const H3 = styled.h3`
     color: ${colors.black};
     font-size: 36px;
     font-weight: 600;
-    width: 327px;
-    height: 86px;
+    margin: auto;
 `;
 
 // LP = Large Paragraph
@@ -61,4 +61,15 @@ export const SP = styled.p`
     line-height: 22px;
 `;
 
-export default { H1, H2, H3, LP, MP, SP };
+export const Description = styled.p`
+    @import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+    font-family: "Josefin Sans", sans-serif;
+    color: ${colors.blue};
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    margin: 0px;
+`;
+
+export default { H1, H2, H3, LP, MP, SP, Description };
