@@ -30,6 +30,13 @@ const TextWrapper = styled.div`
     width: 400px;
     padding-top: 158px;
     padding-bottom: 80px;
+    @media (max-width: 768px) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        width: auto;
+        margin-left: 32px;
+        margin-right: 32px;
+    }
 `
 const WhiteH1 = styled(H1)`
     color: ${colors.white}
@@ -48,6 +55,14 @@ const CabinImage = styled.div`
     float: left;
     margin-top: 8px;
     margin-bottom: 8px;
+    @media (max-width: 768px) {
+        background-image: url(${background});
+        width: 100%;
+        height: 300px;
+        float: center;
+        margin-top: 8px;
+        margin-bottom: 0px;
+    }
 `
 
 const CabinContent = styled.div`
@@ -57,18 +72,29 @@ const CabinContent = styled.div`
     height: 684px;
     margin-top: 8px;
     margin-bottom: 8px;
+    @media (max-width: 768px)     
+        float: center;
+        width: 100%;
+        height: auto;
+        margin-top: 0px;
+        margin-bottom: 8px;
+        padding-bottom: 32px;
 `
 
 const CabinText = styled.div`
     padding-left: 24px;
     padding-top: 128px;
     padding-right: 32px;
+    @media (max-width: 768px) {
+        padding-top: 24px;
+    }
 `
 
 const Link = styled.div`
     color: ${colors.blue}
     font-size: 18px;
-    font-family: JosefinSans-SemiBold;
+    @import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+    font-family: "Josefin Sans", sans-serif;
     font-weight; 600;  
     
 `
@@ -110,7 +136,7 @@ const Home = () => {
                     <Description>8 cottages</Description>
                     <H3>Holiday homes in Rörvik</H3>
                     <MP>“Paviljong Is our biggest cottage with over 100 m2. It has kitchen, big living area, sauna and porch on both side of cottage. Sea view. Close to sea.”</MP>
-                    <Link>Find your cottage <FontAwesomeIcon icon={faLongArrowAltRight} /></Link>
+                    <Link>Find your cottage  <FontAwesomeIcon icon={faLongArrowAltRight} /></Link>
                 </CabinText>
             </CabinContent>
 

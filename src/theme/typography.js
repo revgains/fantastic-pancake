@@ -5,7 +5,7 @@ export const H1 = styled.h1`
     @import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
     font-family: "Josefin Sans", sans-serif;
     color: ${colors.dark};
-    font-size: 54px;
+    font-size: 3.052em;
     font-weight: normal;
 `;
 
@@ -17,7 +17,7 @@ export const H2 = styled.h2`
     @import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
     font-family: "Josefin Sans", sans-serif;
     color: ${colors.blue};
-    font-size: 44px;
+    font-size: 2.441em;
     font-weight: normal;
     margin: 0px;
 `;
@@ -26,11 +26,9 @@ export const H3 = styled.h3`
     @import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
     font-family: "Josefin Sans", sans-serif;
     color: ${colors.black};
-    font-size: 36px;
+    font-size: 1.953em;
     font-weight: 600;
-<<<<<<< HEAD
     margin: auto;
-=======
 `;
 
 export const H4 = styled.h4`
@@ -39,7 +37,6 @@ export const H4 = styled.h4`
     color: #333333;
     font-size: 18px;
     font-weight: 600;
->>>>>>> 151ca989dd86952e0a0f1fbd59d56a5f591d7274
 `;
 
 // LP = Large Paragraph
@@ -48,8 +45,7 @@ export const LP = styled.p`
     @import url("https://fonts.googleapis.com/css?family=Open+Sans");
     font-family: "Open Sans", sans-serif;
     color: #333333;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 1.25em;
 `;
 
 // MP = Medium Paragraph
@@ -58,8 +54,7 @@ export const MP = styled.p`
     @import url("https://fonts.googleapis.com/css?family=Open+Sans");
     font-family: "Open Sans", sans-serif;
     color: ${colors.dark};
-    font-size: 18px;
-    line-height: 32px;
+    font-size: 1.0em;
 `;
 
 // SP = Small Paragraph
@@ -68,7 +63,7 @@ export const SP = styled.p`
     @import url("https://fonts.googleapis.com/css?family=Open+Sans");
     font-family: "Open Sans", sans-serif;
     color: ${colors.dark};
-    font-size: 14px;
+    font-size: 0.75em;
     line-height: 22px;
 `;
 
@@ -76,7 +71,7 @@ export const Description = styled.p`
     @import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
     font-family: "Josefin Sans", sans-serif;
     color: ${colors.blue};
-    font-size: 18px;
+    font-size: 0.9em;
     font-weight: 600;
     padding-bottom: 8px;
     padding-top: 8px;
