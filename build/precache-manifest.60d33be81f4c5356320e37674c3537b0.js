@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/static/media/Rorvik-holidaycottages-Finland-hero.747e0f40.png"
   },
   {
-    "revision": "f802d13610a026b2fe02",
+    "revision": "8b9f1b45e1281b3535cc",
     "url": "/static/css/main.84391209.chunk.css"
   },
   {
@@ -32,8 +32,8 @@ self.__precacheManifest = [
     "url": "/static/media/Logo@3x.6962a3f4.png"
   },
   {
-    "revision": "f802d13610a026b2fe02",
-    "url": "/static/js/main.f802d136.chunk.js"
+    "revision": "8b9f1b45e1281b3535cc",
+    "url": "/static/js/main.8b9f1b45.chunk.js"
   },
   {
     "revision": "3e7e642bbb11dc150454304261f591c9",
@@ -64,7 +64,7 @@ self.__precacheManifest = [
     "url": "/static/media/sup-card-img.6ae88d75.jpg"
   },
   {
-    "revision": "ffd2a764be01b96ab397bcfa96f35172",
+    "revision": "fbbb17c95bd06bb463c0202f92ea0848",
     "url": "/index.html"
   }
 ];

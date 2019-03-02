@@ -31,7 +31,6 @@ const FlagBtn = styled.button`
 `;
 
 const LangTxt = styled.p`
-  @import url('https://fonts.googleapis.com/css?family=Open+Sans');
   font-family: 'Open Sans', sans-serif;
   width: 55px;
   height: 16px;

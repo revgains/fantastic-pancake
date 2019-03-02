@@ -39,7 +39,7 @@ const TextWrapper = styled.div`
     }
 `
 const WhiteH1 = styled(H1)`
-    color: ${colors.white}
+    color: ${colors.white};
     margin-top: 0px;
 `
 
@@ -66,19 +66,20 @@ const CabinImage = styled.div`
 `
 
 const CabinContent = styled.div`
-    background-color: ${colors.grey100}
+    background-color: ${colors.grey100};
     float: right;
     width: 33%;
     height: 684px;
     margin-top: 8px;
     margin-bottom: 8px;
-    @media (max-width: 768px)     
+    @media (max-width: 768px) {
         float: center;
         width: 100%;
         height: auto;
         margin-top: 0px;
         margin-bottom: 8px;
         padding-bottom: 32px;
+        }
 `
 
 const CabinText = styled.div`
@@ -91,22 +92,21 @@ const CabinText = styled.div`
 `
 
 const Link = styled.div`
-    color: ${colors.blue}
+    color: ${colors.blue};
     font-size: 18px;
-    @import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
     font-family: "Josefin Sans", sans-serif;
-    font-weight; 600;  
+    font-weight: 600;  
     
-`
+`;
 
 const ActivityContent = styled.div`
-    background-color: ${colors.grey100}
+    background-color: ${colors.grey100};
     float: left;
     width: 33%;
     height: 684px;
     margin-top: 8px;
     margin-bottom: 8px;
-`
+`;
 
 const ActivityImage = styled.div`
     background-image: url(${background});   

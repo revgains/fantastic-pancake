@@ -22,7 +22,6 @@ export const Logo = styled.div`
 `;
 
 const AppSubTitle = styled.div`
-  @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
   width: 104px;
   height: 32px;
   color: ${colors.dark};
@@ -68,7 +67,6 @@ const AppHeader = styled.div`
 `;
 
 const NavLink = styled(Link)`
-  @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
   width: 104px;
   height: 94%;
   margin: auto;
