@@ -31,31 +31,31 @@ export const H3 = styled.h3`
     height: 86px;
 `;
 
+// LP = Large Paragraph
+
 export const LP = styled.p`
     @import url("https://fonts.googleapis.com/css?family=Open+Sans");
     font-family: "Open Sans", sans-serif;
-    width: 185px;
-    height: 36px;
     color: #333333;
     font-size: 24px;
     line-height: 36px;
 `;
 
+// MP = Medium Paragraph
+
 export const MP = styled.p`
     @import url("https://fonts.googleapis.com/css?family=Open+Sans");
     font-family: "Open Sans", sans-serif;
-    width: 162px;
-    height: 32px;
     color: ${colors.dark};
     font-size: 18px;
     line-height: 32px;
 `;
 
+// SP = Small Paragraph
+
 export const SP = styled.p`
     @import url("https://fonts.googleapis.com/css?family=Open+Sans");
     font-family: "Open Sans", sans-serif;
-    width: 107px;
-    height: 22px;
     color: ${colors.dark};
     font-size: 14px;
     line-height: 22px;
