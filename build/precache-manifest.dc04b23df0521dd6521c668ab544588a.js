@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/static/media/hiking-card-img.5fffb181.jpg"
   },
   {
-    "revision": "e26b969eb1d7888383c1",
-    "url": "/static/css/main.0e07bd8d.chunk.css"
+    "revision": "b216c63296dbac6dde84",
+    "url": "/static/css/main.cf504edb.chunk.css"
   },
   {
-    "revision": "fa4e595fa073ee7c385a",
-    "url": "/static/js/1.fa4e595f.chunk.js"
+    "revision": "eb37c65dd1fd0a452e8f",
+    "url": "/static/js/1.eb37c65d.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -28,8 +28,8 @@ self.__precacheManifest = [
     "url": "/static/media/fishing-card-img.3e7e642b.jpg"
   },
   {
-    "revision": "e26b969eb1d7888383c1",
-    "url": "/static/js/main.e26b969e.chunk.js"
+    "revision": "b216c63296dbac6dde84",
+    "url": "/static/js/main.b216c632.chunk.js"
   },
   {
     "revision": "11964860c88854329f491da8ce585d56",
@@ -52,7 +52,7 @@ self.__precacheManifest = [
     "url": "/static/media/sup-card-img.6ae88d75.jpg"
   },
   {
-    "revision": "224fe18d99d88bdb88f21ea8d8bfaf30",
+    "revision": "64f9a5bdf5808e66e747a85afbd9b615",
     "url": "/index.html"
   }
 ];
