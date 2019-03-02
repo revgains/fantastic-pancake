@@ -1,5 +1,5 @@
 import React from "react";
-import { CabinsWrapper, CardTitle, CardWrapper } from "./Cabins";
+import { CabinsWrapper, CardWrapper } from "./Cabins";
 import data from "../data/activities.json";
 import styled from "styled-components";
 import Card from "./Card";

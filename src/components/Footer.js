@@ -7,9 +7,7 @@ import activities_data from '../data/activities.json';
 import background from '../images/footerbg.png';
 import {MP, H4} from '../theme/typography';
 import DropdownButton from './DropdownButton';
-import headerLogo from '../images/rorvik-logo.svg';
-import Logo from './Header';
-
+import footerLogo from '../images/Logo@1x.png';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -30,6 +28,7 @@ const FooterWrapper= styled.div`
 `;
 
 const FooterTitle= styled.div`
+    display: flex;
     height: 155px;
     width: 100%;
     background-image: url(${background});
@@ -114,15 +113,16 @@ const FooterText= styled(MP)`
       margin-top: auto;
 `;
 
+const FooterLogo = styled.img`
+      display: flex;
+      margin: auto;
+`;
+
 const Footer = () => {
     return (
         <FooterWrapper>
             <FooterTitle>
-            <Logo>
-                <Link to="/">
-                    <img src={headerLogo} alt="rorvik-logo" />
-                </Link>
-            </Logo>   
+                <FooterLogo src={footerLogo} alt="rorvik-logo" />
             </FooterTitle>
             <ListContainer>
             <ListElements>
@@ -149,7 +149,9 @@ const Footer = () => {
             </ListContainer>
             <ExtraElements>
               <H4>Seuraa Meitä
+              <a href="https://fi-fi.facebook.com/pages/category/Hotel---Lodging/R%C3%B6rvik-Stugor-%C3%85land-199070200674255/" target="_blank" rel="noopener noreferrer">
               <Icon icon={faFacebookSquare} />
+              </a>
               <Icon icon={faInstagram} />
               </H4>
             <FooterText>Käyttöehdot</FooterText>
