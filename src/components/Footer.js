@@ -23,7 +23,8 @@ const FooterWrapper= styled.div`
     width: 100%;
 
     @media (max-width: 768px) {
-        
+        width: auto;
+        height: 1104px;
       }
 `;
 
@@ -35,7 +36,7 @@ const FooterTitle= styled.div`
     background-size: 100%;
 
     @media (max-width: 768px) {
-        
+        background-size: auto;
       }
 `;
 
@@ -47,10 +48,9 @@ const ListContainer= styled.div`
     
  
     @media (max-width: 768px) {
-        
+        flex-direction: column;
       }
 `;
-
 
 const ListElements= styled.div`
     display: flex;
@@ -58,7 +58,8 @@ const ListElements= styled.div`
     margin: 24px 72px 24px 72px;
 
     @media (max-width: 768px) {
-        
+        align-items: flex-start;
+        margin: 5px 5px 24px 24px;
       }
 `;
 
@@ -82,14 +83,16 @@ const ListItem= styled(Link)`
         color: ${colors.blue};
     }
     @media (max-width: 768px) {
-        
+        margin-right: 2px;
+        align-items: flex-start
+        flex-wrap: wrap;
       }
 `;
 
 const Icon = styled(FontAwesomeIcon)`
-      margin-left: 24px;
-      font-size: 24px;
-      color: ${colors.blue};
+    margin-left: 24px;
+    font-size: 24px;
+    color: ${colors.blue};
 `;
 
 
@@ -102,20 +105,35 @@ const ExtraElements= styled.div`
     margin: 0px 72px 0px 72px;
 
     @media (max-width: 768px) {
-        
+        margin: 10px 10px 10px 24px
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        heigth: 147px;
       }
 `;
 
+const ContactElement= styled.div`
+    display: flex;
+    flex-direction: column;
+    margin: 24px 72px 24px 72px;
+
+    @media (max-width: 768px) {
+        margin: 5px 5px 5px 24px;
+    }
+`;
+
 const FooterText= styled(MP)`
-      color:${colors.grey400};
-      font-size: 14px;
-      margin-bottom: auto;
-      margin-top: auto;
+    color:${colors.grey400};
+    font-size: 14px;
+    margin-bottom: auto;
+    margin-top: auto;
+    order: 1;
 `;
 
 const FooterLogo = styled.img`
-      display: flex;
-      margin: auto;
+    display: flex;
+    margin: auto;
 `;
 
 const Footer = () => {
@@ -140,12 +158,12 @@ const Footer = () => {
                 <ListItem to="/">Company</ListItem>
                 <ListItem to="/">Contact</ListItem>
             </ListElements>
-            <ListElements>
-            <H4>Yhteystiedot</H4>
+            <ContactElement>
+            <H4>Contact</H4>
                 <MP> 564618165</MP>
                 <MP> rorvikstugor@gmail.com</MP>
                 <MP> Rörvikvägen, 22340 Geta</MP>
-            </ListElements>
+            </ContactElement>
             </ListContainer>
             <ExtraElements>
               <H4>Seuraa Meitä

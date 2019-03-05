@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "747e0f40c871fd772fc1878990befbd5",
-    "url": "/static/media/Rorvik-holidaycottages-Finland-hero.747e0f40.png"
+    "revision": "3e7e642bbb11dc150454304261f591c9",
+    "url": "/static/media/fishing-card-img.3e7e642b.jpg"
   },
   {
-    "revision": "8b9f1b45e1281b3535cc",
-    "url": "/static/css/main.84391209.chunk.css"
+    "revision": "1851dafe214767bb47c4",
+    "url": "/static/css/main.80a56c82.chunk.css"
   },
   {
-    "revision": "c5a8d8aab22300ff7620",
-    "url": "/static/js/1.c5a8d8aa.chunk.js"
+    "revision": "653d30254dfb9f4f5ec1",
+    "url": "/static/js/1.653d3025.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -20,24 +20,32 @@ self.__precacheManifest = [
     "url": "/static/media/Rorvik-holidaycottages-Finland-hero_transparent.7d63b1f6.png"
   },
   {
-    "revision": "84fc190a48aca26a7082852c8b69c9d2",
-    "url": "/static/media/footerbg.84fc190a.png"
+    "revision": "72c405896ef399dc62d2a0bd79230ccf",
+    "url": "/static/media/rorvik-logo.72c40589.svg"
   },
   {
-    "revision": "410518e18a0d58c2ee04bb89d0ca8850",
-    "url": "/static/media/rorvik-logo.410518e1.svg"
+    "revision": "84fc190a48aca26a7082852c8b69c9d2",
+    "url": "/static/media/footerbg.84fc190a.png"
   },
   {
     "revision": "6962a3f429c81a62cc5f15b6169e5f0a",
     "url": "/static/media/Logo@3x.6962a3f4.png"
   },
   {
-    "revision": "8b9f1b45e1281b3535cc",
-    "url": "/static/js/main.8b9f1b45.chunk.js"
+    "revision": "747e0f40c871fd772fc1878990befbd5",
+    "url": "/static/media/Rorvik-holidaycottages-Finland-hero.747e0f40.png"
   },
   {
-    "revision": "3e7e642bbb11dc150454304261f591c9",
-    "url": "/static/media/fishing-card-img.3e7e642b.jpg"
+    "revision": "1851dafe214767bb47c4",
+    "url": "/static/js/main.1851dafe.chunk.js"
+  },
+  {
+    "revision": "84fc190a48aca26a7082852c8b69c9d2",
+    "url": "/static/media/footerbg2x.84fc190a.png"
+  },
+  {
+    "revision": "3c4a277ab287359283667192e0445afd",
+    "url": "/static/media/footerbg3x.3c4a277a.png"
   },
   {
     "revision": "5fffb1811a4d24341007b777efb894ab",
@@ -64,7 +72,7 @@ self.__precacheManifest = [
     "url": "/static/media/sup-card-img.6ae88d75.jpg"
   },
   {
-    "revision": "fbbb17c95bd06bb463c0202f92ea0848",
+    "revision": "5a584f052493f23f8c05a6ad0ab1e0ac",
     "url": "/index.html"
   }
 ];
