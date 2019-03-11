@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/static/media/fishing-card-img.3e7e642b.jpg"
   },
   {
-    "revision": "05762f573ba8820f704e",
+    "revision": "cd499311ae252ced8a19",
     "url": "/static/css/main.4b6fe275.chunk.css"
   },
   {
-    "revision": "760557ffa7f9a1652764",
-    "url": "/static/js/1.760557ff.chunk.js"
+    "revision": "3b2b53d0a1cd92565a06",
+    "url": "/static/js/1.3b2b53d0.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -36,8 +36,8 @@ self.__precacheManifest = [
     "url": "/static/media/Rorvik-holidaycottages-Finland-hero.747e0f40.png"
   },
   {
-    "revision": "05762f573ba8820f704e",
-    "url": "/static/js/main.05762f57.chunk.js"
+    "revision": "cd499311ae252ced8a19",
+    "url": "/static/js/main.cd499311.chunk.js"
   },
   {
     "revision": "84fc190a48aca26a7082852c8b69c9d2",
@@ -72,7 +72,7 @@ self.__precacheManifest = [
     "url": "/static/media/sup-card-img.6ae88d75.jpg"
   },
   {
-    "revision": "13d827ae0096741296285f1f086058ec",
+    "revision": "3d3f6083e3f80305963daf6ef5cf17d7",
     "url": "/index.html"
   }
 ];
