@@ -16,15 +16,6 @@ import { faFacebookSquare, faInstagram } from '@fortawesome/free-brands-svg-icon
 
 library.add(faFacebookSquare, faInstagram, faPhone, faEnvelope, faLocationArrow);
 
-
-/*
-kuva toistaa itteään pienil ruuduil,
-listelement flex-wrap: wrap ei toimi vaan listat menee otsikon yli,
-contactelement teksti ei mene iconin vieree vaan alapuolelle,
-kännykässä fb ja insta logot ei mene Seuraa meitä tekstin alle,
-*/
-
-
 const FooterWrapper= styled.div`
     display: flex;
     justify-content: center;
