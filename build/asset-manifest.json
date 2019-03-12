@@ -1,9 +1,9 @@
 {
-  "main.css": "/static/css/main.60f1d7ec.chunk.css",
-  "main.js": "/static/js/main.2ce75897.chunk.js",
-  "main.js.map": "/static/js/main.2ce75897.chunk.js.map",
-  "static/js/1.760557ff.chunk.js": "/static/js/1.760557ff.chunk.js",
-  "static/js/1.760557ff.chunk.js.map": "/static/js/1.760557ff.chunk.js.map",
+  "main.css": "/static/css/main.80a56c82.chunk.css",
+  "main.js": "/static/js/main.a9a07ff4.chunk.js",
+  "main.js.map": "/static/js/main.a9a07ff4.chunk.js.map",
+  "static/js/1.1daedf0a.chunk.js": "/static/js/1.1daedf0a.chunk.js",
+  "static/js/1.1daedf0a.chunk.js.map": "/static/js/1.1daedf0a.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
   "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
   "static/media/sauna-card-img.jpg": "/static/media/sauna-card-img.d092bcfa.jpg",
@@ -20,8 +20,8 @@
   "static/media/paviljong-card-img.jpg": "/static/media/paviljong-card-img.0180469e.jpg",
   "static/media/rorvik-logo.svg": "/static/media/rorvik-logo.72c40589.svg",
   "static/media/sup-card-img.jpg": "/static/media/sup-card-img.6ae88d75.jpg",
-  "static/css/main.60f1d7ec.chunk.css.map": "/static/css/main.60f1d7ec.chunk.css.map",
+  "static/css/main.80a56c82.chunk.css.map": "/static/css/main.80a56c82.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.0867f3a9f54aa95c949e03b7f615cff7.js": "/precache-manifest.0867f3a9f54aa95c949e03b7f615cff7.js",
+  "precache-manifest.489cf3daf6602dd608997d4c4ce17366.js": "/precache-manifest.489cf3daf6602dd608997d4c4ce17366.js",
   "service-worker.js": "/service-worker.js"
 }
