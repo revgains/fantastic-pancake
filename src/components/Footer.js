@@ -57,18 +57,18 @@ const ListContainer= styled.div`
 const ListElements= styled.div`
     display: flex;
     flex-direction: column;
-    margin: 24px 72px 24px 72px;
+    margin: 24px 72px 72px 72px;
     height: 182px;
 
     @media (max-width: 768px) {
         align-items: flex-start;
         margin: 5px 5px 24px 24px;
         height: 146px;
-
       }
 `;
 
 const ListItem= styled(Link)`
+    margin: 2px 2px 2px 10px;
     @import url("https://fonts.googleapis.com/css?family=Open+Sans");
     font-family: "Open Sans", sans-serif;
     flex: 1;
@@ -88,7 +88,7 @@ const ListItem= styled(Link)`
         color: ${colors.blue};
     }
     @media (max-width: 768px) {
-        margin-right: 2px;
+        margin: 0px 0px 0px 2px;
         align-items: flex-start
       }
 `;
@@ -97,6 +97,10 @@ const Icon = styled(FontAwesomeIcon)`
     margin-left: 24px;
     font-size: 24px;
     color: ${colors.blue};
+
+    @media (max-width: 768px) {
+
+    }
 `;
 
 const ContactIcon = styled(FontAwesomeIcon)`
@@ -167,21 +171,19 @@ const FooterLogo = styled.img`
 const ListTitle= styled.div`
     flex: inline-flex;
     width: 100%;
+    margin-left: 12px;
 `;
 
 const ListLinks= styled.div`
     display: flex;
     flex-direction: column;
-    margin: 24px 72px 24px 72px;
     flex-wrap: wrap;
     height: 182px;
-    margin: 5px 5px 5px 5px;
 
     @media (max-width: 768px) {
         align-items: flex-start;
         margin: 5px 5px 24px 24px;
         height: 146px;
-
 `;
 
 const Footer = () => {
@@ -191,60 +193,60 @@ const Footer = () => {
                 <FooterLogo src={footerLogo} alt="rorvik-logo" />
             </FooterTitle>
             <ListContainer>
-            <ListElements>
-            <ListTitle>
-            <H4>Cottages</H4>
-            </ListTitle>
-            <ListLinks>
-                {cabin_data.cabins.map(cabin => <ListItem key={cabin.id} to="/">{cabin.name}</ListItem>)}
-            </ListLinks>
-            </ListElements>
-            <ListElements>
-            <ListTitle>
-            <H4>Activities</H4>
-            </ListTitle>
-            <ListLinks>
-                {activities_data.activities.map(activity => <ListItem to="/">{activity.name}</ListItem>)}
-            </ListLinks>
-            </ListElements>
-            <ListElements>
-            <ListTitle>
-            <H4>About</H4>
-            </ListTitle>
-            <ListLinks>
-                <ListItem to="/">Pricing</ListItem>
-                <ListItem to="/">Location</ListItem>
-                <ListItem to="/">Company</ListItem>
-                <ListItem to="/">Contact</ListItem>
-            </ListLinks>
-            </ListElements>
-            <ContactElement>
-            <ListTitle>
-            <H4>Contact</H4>
-            </ListTitle>
-            <ContactElement2>
-                <ContactIcon icon={faPhone}/>
-                <ContactText>+358 40 044 5669</ContactText>
-            </ContactElement2>
-            <ContactElement2>
-                <ContactIcon icon={faEnvelope}/>
-                <ContactText>Rorvikstugor@gmail.com</ContactText>
-            </ContactElement2>
-            <ContactElement2>
-                <ContactIcon icon={faLocationArrow}/>
-                <ContactText>Rörvikvägen, 22340 Geta</ContactText>
-            </ContactElement2>
-            </ContactElement>
+                <ListElements>
+                    <ListTitle>
+                        <H4>Cottages</H4>
+                    </ListTitle>
+                    <ListLinks>
+                        {cabin_data.cabins.map(cabin => <ListItem key={cabin.id} to="/">{cabin.name}</ListItem>)}
+                    </ListLinks>
+                </ListElements>
+                <ListElements>
+                    <ListTitle>
+                        <H4>Activities</H4>
+                    </ListTitle>
+                    <ListLinks>
+                        {activities_data.activities.map(activity => <ListItem to="/">{activity.name}</ListItem>)}
+                    </ListLinks>
+                </ListElements>
+                <ListElements>
+                    <ListTitle>
+                        <H4>About</H4>
+                    </ListTitle>
+                    <ListLinks>
+                        <ListItem to="/">Pricing</ListItem>
+                        <ListItem to="/">Location</ListItem>
+                        <ListItem to="/">Company</ListItem>
+                        <ListItem to="/">Contact</ListItem>
+                    </ListLinks>
+                </ListElements>
+                <ContactElement>
+                    <ListTitle>
+                        <H4>Contact</H4>
+                    </ListTitle>
+                <ContactElement2>
+                    <ContactIcon icon={faPhone}/>
+                    <ContactText>+358 40 044 5669</ContactText>
+                </ContactElement2>
+                <ContactElement2>
+                    <ContactIcon icon={faEnvelope}/>
+                    <ContactText>Rorvikstugor@gmail.com</ContactText>
+                </ContactElement2>
+                <ContactElement2>
+                    <ContactIcon icon={faLocationArrow}/>
+                    <ContactText>Rörvikvägen, 22340 Geta</ContactText>
+                </ContactElement2>
+                </ContactElement>
             </ListContainer>
             <ExtraElements>
-              <H4>Seuraa Meitä
-              <a href="https://fi-fi.facebook.com/pages/category/Hotel---Lodging/R%C3%B6rvik-Stugor-%C3%85land-199070200674255/" target="_blank" rel="noopener noreferrer">
-              <Icon icon={faFacebookSquare} />
-              </a>
-              <Icon icon={faInstagram} />
-              </H4>
-            <FooterText>Käyttöehdot</FooterText>
-            <FooterText>Rörvik Stugby @ 2019</FooterText>
+                <H4>Seuraa Meitä
+                    <a href="https://fi-fi.facebook.com/pages/category/Hotel---Lodging/R%C3%B6rvik-Stugor-%C3%85land-199070200674255/" target="_blank" rel="noopener noreferrer">
+                    <Icon icon={faFacebookSquare} />
+                    </a>
+                    <Icon icon={faInstagram} />
+                    </H4>
+                    <FooterText>Käyttöehdot</FooterText>
+                    <FooterText>Rörvik Stugby @ 2019</FooterText>
               <DropdownButton/>
             </ExtraElements>
         </FooterWrapper>
