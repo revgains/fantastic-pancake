@@ -63,7 +63,6 @@ const ListElements= styled.div`
     @media (max-width: 768px) {
         align-items: flex-start;
         margin: 5px 5px 24px 24px;
-        height: 146px;
       }
 `;
 
@@ -88,7 +87,7 @@ const ListItem= styled(Link)`
         color: ${colors.blue};
     }
     @media (max-width: 768px) {
-        margin: 0px 0px 0px 2px;
+        margin: 8px 8px 8px 10px;
         align-items: flex-start
       }
 `;
@@ -182,8 +181,8 @@ const ListLinks= styled.div`
 
     @media (max-width: 768px) {
         align-items: flex-start;
-        margin: 5px 5px 24px 24px;
         height: 146px;
+        width: 100%;
 `;
 
 const Footer = () => {
