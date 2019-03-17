@@ -1,29 +1,44 @@
 {
-    "activities": [
-        {
-            "name": "Fishing",
-            "description": "So much room for activities",
-            "image": "fishing-card-img.jpg"
-        },
-        {
-            "name": "SUP",
-            "description": "So much room for activities",
-            "image": "sup-card-img.jpg"
-        },
-        {
-            "name": "Kayak",
-            "description": "So much room for activities",
-            "image": "kayak-card-img.jpg"
-        },
-        {
-            "name": "Sauna",
-            "description": "So much room for activities",
-            "image": "sauna-card-img.jpg"
-        },
-        {
-            "name": "Hiking",
-            "description": "So much room for activities",
-            "image": "hiking-card-img.jpg"
-        }
-    ]
+  "activities": [
+    {
+      "name": "Fishing",
+      "description": "So much room for activities",
+      "image": "fishing-card-img.jpg"
+    },
+    {
+      "name": "SUP",
+      "description": "So much room for activities",
+      "image": "sup-card-img.jpg"
+    },
+    {
+      "name": "Kayak",
+      "description": "So much room for activities",
+      "image": "kayak-card-img.jpg"
+    },
+    {
+      "name": "Sauna",
+      "description": "So much room for activities",
+      "image": "sauna-card-img.jpg"
+    },
+    {
+      "name": "Hiking",
+      "description": "So much room for activities",
+      "image": "hiking-card-img.jpg"
+    },
+    {
+      "name": "Boating",
+      "description": "So much room for activities",
+      "image": "sauna-card-img.jpg"
+    },
+    {
+      "name": "Bouldering",
+      "description": "So much room for activities",
+      "image": "sauna-card-img.jpg"
+    },
+    {
+      "name": "Swimming",
+      "description": "So much room for activities",
+      "image": "sauna-card-img.jpg"
+    }
+  ]
 }
