@@ -115,7 +115,6 @@ class Header extends Component {
         document.addEventListener('click', this.closeMenu);
       }
     );
-    console.log('show menu', this.state.showMenu);
   };
 
   closeMenu = () => {

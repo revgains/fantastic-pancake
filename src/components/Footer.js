@@ -112,7 +112,7 @@ const Icon = styled(FontAwesomeIcon)`
   }
 `;
 
-const ContactIcon = styled(FontAwesomeIcon)`
+export const ContactIcon = styled(FontAwesomeIcon)`
   font-size: 16px;
   color: ${colors.blue};
   justify-content: space-between;
@@ -136,7 +136,7 @@ const ExtraElements = styled.div`
       }
 `;
 
-const ContactElement = styled.div`
+export const ContactElement = styled.div`
   display: flex;
   flex-direction: column;
   margin: 24px 72px 16px 72px;
@@ -146,12 +146,12 @@ const ContactElement = styled.div`
   }
 `;
 
-const ContactElement2 = styled.div`
+export const ContactElement2 = styled.div`
   display: inline-flex;
   align-items: center;
 `;
 
-const ContactText = styled.p`
+export const ContactText = styled.p`
   @import url('https://fonts.googleapis.com/css?family=Open+Sans');
   font-family: 'Open Sans', sans-serif;
   color: ${colors.dark};

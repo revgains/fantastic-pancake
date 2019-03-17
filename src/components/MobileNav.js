@@ -4,6 +4,21 @@ import colors from '../theme/colors';
 import headerLogo from '../images/rorvik-logo.svg';
 import { H4 } from '../theme/typography';
 import { Link } from 'react-router-dom';
+import {
+  ContanctElement,
+  ContactElement2,
+  ContactText,
+  ContactIcon
+} from './Footer';
+
+import { library } from '@fortawesome/fontawesome-svg-core';
+import {
+  faPhone,
+  faEnvelope,
+  faLocationArrow
+} from '@fortawesome/free-solid-svg-icons';
+
+library.add(faPhone, faEnvelope, faLocationArrow);
 
 const MobileNavContainer = styled.div`
   width: 350px;
@@ -50,6 +65,20 @@ const MobileH4 = styled(H4)`
   }
 `;
 
+const MobileNavContact = styled(ContactElement2)`
+  margin-left: 23px;
+  margin-bottom: 18px;
+`;
+
+const Sublink = styled(NavLink)`
+  width: 72px;
+  height: 22px;
+  color: ${colors.dark};
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 12px 12px 24px 24px;
+`;
+
 const MobileNav = () => {
   return (
     <MobileNavContainer>
@@ -72,7 +101,27 @@ const MobileNav = () => {
         </NavItem>
       </NavLink>
       <NavItem>
-        <MobileH4 to="/about">About</MobileH4>
+        <MobileH4>About</MobileH4>
+        <Sublink to="/pricing">Pricing</Sublink>
+        <Sublink to="/">Location</Sublink>
+        <br />
+        <Sublink to="/company">Company</Sublink>
+        <Sublink to="/Contact">Contact</Sublink>
+      </NavItem>
+      <NavItem>
+        <MobileH4>Yhteystiedot</MobileH4>
+        <MobileNavContact>
+          <ContactIcon icon={faPhone} />
+          <ContactText>+358 40 044 5669</ContactText>
+        </MobileNavContact>
+        <MobileNavContact>
+          <ContactIcon icon={faEnvelope} />
+          <ContactText>rorvikstugor@gmail.com</ContactText>
+        </MobileNavContact>
+        <MobileNavContact>
+          <ContactIcon icon={faLocationArrow} />
+          <ContactText>Rörvikvägen, 22340 Geta</ContactText>
+        </MobileNavContact>
       </NavItem>
     </MobileNavContainer>
   );
