@@ -6,12 +6,13 @@ const CardWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 381.65px;
+  width: 382px;
   height: 428px;
   border: 1px ${colors.grey200} solid;
   background: ${colors.white};
   margin: 12px;
   padding-bottom: 8px;
+  white-space: pre-line;
 
   @media (max-width: 768px) {
     height: 437px;
@@ -30,7 +31,7 @@ const BedAmount = styled.p`
   font-family: 'Open Sans', sans-serif;
   width: 112.73px;
   height: 14px;
-  color: #0024aa;
+  color: ${colors.blue};
   font-size: 11px;
   font-weight: 500;
   margin-bottom: 2px;
@@ -38,7 +39,7 @@ const BedAmount = styled.p`
   padding-left: 20px;
 `;
 
-const CabinName = styled.h4`
+const CardTitle = styled.h4`
   @import url('https://fonts.googleapis.com/css?family=Open+Sans');
   font-family: 'Open Sans', sans-serif;
   width: 66px;
@@ -54,9 +55,7 @@ const CabinName = styled.h4`
 const P = styled.p`
   @import url('https://fonts.googleapis.com/css?family=Open+Sans');
   font-family: 'Open Sans', sans-serif;
-  width: 960px;
-  height: 48px;
-  color: #333333;
+  color: ${colors.dark};
   font-size: 14px;
   line-height: 22px;
   padding-left: 20px;
@@ -70,7 +69,7 @@ const Card = ({ image, name, beds, description }) => {
     <CardWrapper key={name}>
       <CardImg src={require(`../images/${image}`)} alt={name} />
       <BedAmount>{beds}</BedAmount>
-      <CabinName>{name}</CabinName>
+      <CardTitle>{name}</CardTitle>
       <P>{description}</P>
     </CardWrapper>
   );

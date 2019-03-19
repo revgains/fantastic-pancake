@@ -12,22 +12,25 @@ export const CabinsWrapper = styled.div`
   padding-top: 64px;
   flex-direction: column;
   flex: 1;
-  margin-left: 64px;
 
   @media (max-width: 768px) {
-    margin-left: 12px;
   }
 `;
 
 export const CardWrapper = styled.div`
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
 `;
 
 export const H3Title = styled(H3)`
   height: 86px;
   width: 327px;
-  margin-left: 8px;
+  margin-left: 74px;
+
+  @media (max-width: 768px) {
+    margin: auto;
+  }
 `;
 
 const Cabins = () => {

@@ -35,6 +35,7 @@ const LangTxt = styled.p`
   width: 55px;
   height: 16px;
   color: ${colors.grey400};
+  text-transform: uppercase;
   font-size: 12px;
   font-weight: solid;
   text-align: center;
@@ -47,12 +48,15 @@ const Icon = styled.div`
 `;
 
 class LanguageButton extends Component {
-  state = {};
+  state = {
+    language: 'fin',
+    showFlagMenu: false
+  };
   render() {
     return (
       <FlagBtn>
         <BtnImg src={fin} alt="fin-flag" />
-        <LangTxt>FIN</LangTxt>
+        <LangTxt>{this.state.language}</LangTxt>
         <Icon>
           <FontAwesomeIcon icon={'angle-down'} />
         </Icon>
