@@ -46,7 +46,7 @@ const Icon = styled.div`
   color: ${colors.grey400};
 `;
 
-class DropdownButton extends Component {
+class LanguageButton extends Component {
   state = {};
   render() {
     return (
@@ -61,4 +61,4 @@ class DropdownButton extends Component {
   }
 }
 
-export default DropdownButton;
+export default LanguageButton;

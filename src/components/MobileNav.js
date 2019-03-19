@@ -4,21 +4,18 @@ import colors from '../theme/colors';
 import headerLogo from '../images/rorvik-logo.svg';
 import { H4 } from '../theme/typography';
 import { Link } from 'react-router-dom';
-import {
-  ContanctElement,
-  ContactElement2,
-  ContactText,
-  ContactIcon
-} from './Footer';
+import { ContactElement2, ContactText, ContactIcon } from './Footer';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
   faPhone,
   faEnvelope,
-  faLocationArrow
+  faLocationArrow,
+  faTimes
 } from '@fortawesome/free-solid-svg-icons';
+import DropMenu from './DropMenu';
 
-library.add(faPhone, faEnvelope, faLocationArrow);
+library.add(faPhone, faEnvelope, faLocationArrow, faTimes);
 
 const MobileNavContainer = styled.div`
   width: 350px;
@@ -32,7 +29,8 @@ const MobileNavContainer = styled.div`
 `;
 
 const NavHeader = styled.div`
-  color: pink;
+  display: flex;
+  flex-direction: row;
   border-bottom: 1px solid ${colors.grey300};
 `;
 
@@ -76,14 +74,22 @@ const Sublink = styled(NavLink)`
   color: ${colors.dark};
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
-  margin: 12px 12px 24px 24px;
+  margin: 0px 8px 8px 24px;
 `;
 
-const MobileNav = () => {
+const SublinkContainer = styled.div`
+  display: flex;
+  max-height: 75px;
+  min-width: 150px;
+  justify-content: flex-start;
+`;
+
+const MobileNav = ({ handleClick }) => {
   return (
     <MobileNavContainer>
       <NavHeader>
         <MobileLogo src={headerLogo} alt="Rörvik" />
+        <DropMenu onClick={handleClick} menuicon={faTimes} />
       </NavHeader>
       <NavLink to="/">
         <NavItem>
@@ -102,11 +108,14 @@ const MobileNav = () => {
       </NavLink>
       <NavItem>
         <MobileH4>About</MobileH4>
-        <Sublink to="/pricing">Pricing</Sublink>
-        <Sublink to="/">Location</Sublink>
-        <br />
-        <Sublink to="/company">Company</Sublink>
-        <Sublink to="/Contact">Contact</Sublink>
+        <SublinkContainer>
+          <Sublink to="/pricing">Pricing</Sublink>
+          <Sublink to="/company">Company</Sublink>
+        </SublinkContainer>
+        <SublinkContainer>
+          <Sublink to="/">Location</Sublink>
+          <Sublink to="/contact">Contact</Sublink>
+        </SublinkContainer>
       </NavItem>
       <NavItem>
         <MobileH4>Yhteystiedot</MobileH4>

@@ -3,9 +3,14 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import colors from '../theme/colors';
 import headerLogo from '../images/rorvik-logo.svg';
-import DropdownButton from './DropdownButton';
+import LanguageButton from './LanguageButton';
 import DropMenu from './DropMenu';
 import MobileNav from './MobileNav';
+
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+
+library.add(faBars);
 
 export const Logo = styled.div`
   margin: auto;
@@ -146,10 +151,12 @@ class Header extends Component {
           <NavLink to="/activities">Activities</NavLink>
           <NavLink to="/pricing">Pricing</NavLink>
           <NavLink to="/contact">Contacts</NavLink>
-          <DropdownButton />
+          <LanguageButton />
         </NavElements>
-        <DropMenu handleOpen={this.openMenu} />
-        {this.state.showMenu ? <MobileNav /> : null}
+        <DropMenu handleOpen={this.openMenu} menuicon={faBars} />
+        {this.state.showMenu ? (
+          <MobileNav handleClick={this.closeMenu} />
+        ) : null}
       </AppHeader>
     );
   }

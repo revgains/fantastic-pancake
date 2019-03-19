@@ -1,5 +1,4 @@
 import React from 'react';
-import MobileNav from './MobileNav';
 
 const Pricing = () => {
   return (

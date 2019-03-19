@@ -6,7 +6,7 @@ import cabin_data from '../data/cabins.json';
 import activities_data from '../data/activities.json';
 import background from '../images/footerbg.png';
 import { MP, H4 } from '../theme/typography';
-import DropdownButton from './DropdownButton';
+import LanguageButton from './LanguageButton';
 import footerLogo from '../images/Logo@1x.png';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -266,7 +266,7 @@ const Footer = () => {
         </H4>
         <FooterText>Käyttöehdot</FooterText>
         <FooterText>Rörvik Stugby @ 2019</FooterText>
-        <DropdownButton />
+        <LanguageButton />
       </ExtraElements>
     </FooterWrapper>
   );
