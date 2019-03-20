@@ -74,6 +74,7 @@ const ListElements = styled.div`
   @media (max-width: 800px) {
     align-items: flex-start;
     margin: 5px 5px 24px 24px;
+    height: 162px;
   }
 `;
 

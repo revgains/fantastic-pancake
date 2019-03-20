@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/fishing-card-img.3e7e642b.jpg"
   },
   {
-    "revision": "0b90401aa13790365d47",
-    "url": "/static/css/main.4b6fe275.chunk.css"
+    "revision": "f97dc59175a3770978e0",
+    "url": "/static/css/main.64057ed8.chunk.css"
   },
   {
     "revision": "e0041473f6c2b516d4b6",
@@ -20,8 +20,8 @@ self.__precacheManifest = [
     "url": "/static/media/Rorvik-holidaycottages-Finland-hero_transparent.7d63b1f6.png"
   },
   {
-    "revision": "410518e18a0d58c2ee04bb89d0ca8850",
-    "url": "/static/media/rorvik-logo.410518e1.svg"
+    "revision": "72c405896ef399dc62d2a0bd79230ccf",
+    "url": "/static/media/rorvik-logo.72c40589.svg"
   },
   {
     "revision": "84fc190a48aca26a7082852c8b69c9d2",
@@ -36,8 +36,8 @@ self.__precacheManifest = [
     "url": "/static/media/Rorvik-holidaycottages-Finland-hero.747e0f40.png"
   },
   {
-    "revision": "0b90401aa13790365d47",
-    "url": "/static/js/main.0b90401a.chunk.js"
+    "revision": "f97dc59175a3770978e0",
+    "url": "/static/js/main.f97dc591.chunk.js"
   },
   {
     "revision": "84fc190a48aca26a7082852c8b69c9d2",
@@ -72,7 +72,7 @@ self.__precacheManifest = [
     "url": "/static/media/sup-card-img.6ae88d75.jpg"
   },
   {
-    "revision": "eb8f439c310b4193a5874cdf2123e48d",
+    "revision": "ca2785499ac3b94d7126937f090a5faa",
     "url": "/index.html"
   }
 ];
