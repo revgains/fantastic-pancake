@@ -6,6 +6,7 @@ import Contact from './Contact';
 import NotFound from './NotFound';
 import Pricing from './Pricing';
 import Activities from './Activities';
+import CabinCard from './CabinCard';
 
 const Routing = () => {
   return (
@@ -15,6 +16,7 @@ const Routing = () => {
       <Route path="/activities" exact component={Activities} />
       <Route path="/contact" exact component={Contact} />
       <Route path="/pricing" exact component={Pricing} />
+      <Route path="/cabins/paviljong" exact component={CabinCard} />
       <Route component={NotFound} />
     </Switch>
   );

@@ -66,6 +66,7 @@ const AppHeader = styled.div`
   width: 100%;
   height: 82px;
   position: fixed;
+  z-index: 100;
   background: ${colors.white};
   @media (max-width: 800px) {
     margin: auto;

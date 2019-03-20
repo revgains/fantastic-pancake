@@ -9,11 +9,12 @@ import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
 library.add(faLongArrowAltRight);
 
 const ButtonWrapper = styled.div`
-  display: none;
+  background-color: ${colors.blue};
+  display: flex;
+  height: 72px;
+  bottom: 0;
+
   @media (max-width: 800px) {
-    background-color: ${colors.blue};
-    display: flex;
-    height: 72px;
     flex: 0 0 auto;
     position: fixed;
     bottom: 0;
@@ -31,7 +32,7 @@ const TextWapper = styled.div`
 const Label = styled.h1`
   color: #ffffff;
   font-size: 18px;
-  font-family: JosefinSans-SemiBold;
+  font-family: 'Josefin Sans', sans-serif;
   font-weight: 600;
   margin: 24px 16px 0px 32px;
 `;
@@ -39,7 +40,7 @@ const Label = styled.h1`
 const Description = styled.h2`
   color: #a8afc8;
   font-size: 14px;
-  font-family: OpenSans;
+  font-family: 'OpenSans', sans-serif;
   font-weight: 300;
   margin: 0px 16px 16px 32px;
 `;
