@@ -11,7 +11,7 @@ library.add(faBars, faTimes);
 const DropBtn = styled.button`
   display: none;
 
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     display: initial;
     align-self: flex-end;
     cursor: pointer;

@@ -19,7 +19,7 @@ export const Logo = styled.div`
   height: 32px;
   width: 204px;
   padding-left: 16px;
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     display: flex;
     margin: auto;
     margin-top: 12px;
@@ -41,7 +41,7 @@ const AppSubTitle = styled.div`
   margin-right: 32px;
   position: relative;
   padding-top: 4px;
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     margin: auto;
     margin-left: 16px;
     left: 0px;
@@ -54,7 +54,7 @@ const TitleContainer = styled.div`
   margin: auto;
   margin-left: 16px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     flex-direction: column;
   }
 `;
@@ -67,7 +67,7 @@ const AppHeader = styled.div`
   height: 82px;
   position: fixed;
   background: ${colors.white};
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     margin: auto;
   }
 `;
@@ -100,7 +100,7 @@ const NavElements = styled.div`
   margin-right: 24px;
   justify-content: space-evenly;
 
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     display: none;
   }
 `;

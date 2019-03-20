@@ -36,7 +36,7 @@ const FooterWrapper = styled.div`
   height: auto;
   width: 100%;
 
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     width: auto;
     height: auto;
   }
@@ -50,7 +50,7 @@ const FooterTitle = styled.div`
   background-size: 110%;
   background-repeat: no-repeat;
 
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     background-size: 450%;
   }
 `;
@@ -61,7 +61,7 @@ const ListContainer = styled.div`
   display: flex;
   justify-content: space-between;
 
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     flex-direction: column;
   }
 `;
@@ -71,7 +71,7 @@ const ListElements = styled.div`
   flex-direction: column;
   margin: 24px 72px 16px 72px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     align-items: flex-start;
     margin: 5px 5px 24px 24px;
   }
@@ -97,7 +97,7 @@ const ListItem = styled(Link)`
     cursor: pointer;
     color: ${colors.blue};
   }
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     margin: 4px;
     align-items: flex-start;
   }
@@ -108,7 +108,9 @@ const Icon = styled(FontAwesomeIcon)`
   font-size: 24px;
   color: ${colors.blue};
 
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
+    margin-left: 0px;
+    margin-right: 16px;
   }
 `;
 
@@ -121,16 +123,15 @@ export const ContactIcon = styled(FontAwesomeIcon)`
 
 const ExtraElements = styled.div`
     background: ${colors.grey100};
-    display: inline-flex;
-    justify-content: space-evenly;
+    display: flex;
     list-style-type: none;
     justify-content: space-between;
     margin: 0px 72px 0px 72px;
 
-    @media (max-width: 768px) {
-        margin: 5px 5px 5px 24px
+    @media (max-width: 800px) {
+        margin: 4px 4px 4px 24px
         display: flex;
-        align-items: flex-start;
+        justify-content: space-evenly;
         flex-wrap: wrap;
         heigth: 147px;
       }
@@ -141,7 +142,7 @@ export const ContactElement = styled.div`
   flex-direction: column;
   margin: 24px 72px 16px 72px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     margin: 5px 5px 5px 24px;
   }
 `;
@@ -166,7 +167,7 @@ const FooterText = styled(MP)`
   margin-bottom: auto;
   margin-top: auto;
 
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     order: 1;
   }
 `;
@@ -188,10 +189,35 @@ const ListLinks = styled.div`
     flex-wrap: wrap;
     height: 124px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 800px) {
         align-items: flex-start;
         height: 146px;
         width: 100%;
+`;
+
+const SomeContainer = styled.div`
+  display: flex;
+
+  @media (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+  }
+`;
+
+const IconsContainer = styled.div`
+  display: flex;
+  margin: auto;
+  @media (max-width: 800px) {
+    display: flex;
+    margin: 0px 0px 0px 0px;
+  }
+`;
+
+const SomeText = styled(H4)`
+  @media (max-width: 800px) {
+    margin-bottom: 12px;
+  }
 `;
 
 const Footer = () => {
@@ -253,17 +279,20 @@ const Footer = () => {
         </ContactElement>
       </ListContainer>
       <ExtraElements>
-        <H4>
-          Seuraa Meitä
-          <a
-            href="https://fi-fi.facebook.com/pages/category/Hotel---Lodging/R%C3%B6rvik-Stugor-%C3%85land-199070200674255/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Icon icon={faFacebookSquare} />
-          </a>
-          <Icon icon={faInstagram} />
-        </H4>
+        <SomeContainer>
+          <SomeText>Seuraa Meitä </SomeText>
+          <IconsContainer>
+            <a
+              href="https://fi-fi.facebook.com/pages/category/Hotel---Lodging/R%C3%B6rvik-Stugor-%C3%85land-199070200674255/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icon icon={faFacebookSquare} />
+            </a>
+            <Icon icon={faInstagram} />
+          </IconsContainer>
+        </SomeContainer>
+
         <FooterText>Käyttöehdot</FooterText>
         <FooterText>Rörvik Stugby @ 2019</FooterText>
         <LanguageButton />

@@ -13,7 +13,6 @@ const BtnImg = styled.img`
   height: 20px;
   width: 34px;
   margin: auto;
-  border: 1px solid ${colors.grey200};
   border-radius: 4px;
 `;
 
@@ -21,22 +20,19 @@ const FlagBtn = styled.button`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 130px;
-  height: 48px;
+  width: 128px;
+  height: 42px;
   border: 1px solid #d9dee9;
   border-radius: 4px;
   background: rgba(255, 255, 255, 0);
-  margin-top: auto;
-  margin-bottom: auto;
+  margin: auto 60px auto 16px;
 `;
 
 const LangTxt = styled.p`
-  font-family: 'Open Sans', sans-serif;
-  width: 55px;
-  height: 16px;
-  color: ${colors.grey400};
+  font-family: 'Josefin Sans', sans-serif;
+  color: ${colors.dark};
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: solid;
   text-align: center;
   margin: auto;
@@ -48,15 +44,12 @@ const Icon = styled.div`
 `;
 
 class LanguageButton extends Component {
-  state = {
-    language: 'fin',
-    showFlagMenu: false
-  };
+  state = {};
   render() {
     return (
       <FlagBtn>
         <BtnImg src={fin} alt="fin-flag" />
-        <LangTxt>{this.state.language}</LangTxt>
+        <LangTxt>fin</LangTxt>
         <Icon>
           <FontAwesomeIcon icon={'angle-down'} />
         </Icon>
