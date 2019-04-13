@@ -132,7 +132,6 @@ const ExtraElements = styled.div`
     @media (max-width: 800px) {
         margin: 4px 4px 4px 24px
         display: flex;
-        justify-content: space-evenly;
         flex-wrap: wrap;
         heigth: 147px;
       }
