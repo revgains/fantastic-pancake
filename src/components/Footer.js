@@ -233,7 +233,7 @@ const Footer = () => {
           </ListTitle>
           <ListLinks>
             {cabin_data.cabins.map(cabin => (
-              <ListItem key={cabin.id} to="/">
+              <ListItem key={cabin.id} to={`/cabins/${cabin.name}`}>
                 {cabin.name}
               </ListItem>
             ))}
