@@ -6,7 +6,11 @@ import CarouselBtn from './CarouselBtn';
 
 const CarouselImage = styled.img`
   height: 100%;
-  width: 100%;
+  width: calc(1vw * 53.8);
+
+  @media (max-width: 800px) {
+    width: 100%;
+  }
 `;
 
 const ImageCarousel = () => {

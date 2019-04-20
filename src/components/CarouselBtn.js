@@ -23,15 +23,19 @@ const ButtonRight = styled.div`
   position: absolute;
   bottom: 0;
   font-size: 24px;
-  color: rgba(255, 255, 255, 0.8);
+  color: red;
   right: 0;
-  margin-right: 24px;
+  margin-right: calc(1vw * 8);
   margin-bottom: 18px;
 `;
 
 const ButtonLeft = styled(ButtonRight)`
-  margin-right: 82px;
+  margin-right: calc(1vw * 11);
   margin-bottom: 18px;
+
+  @media (max-width: 800px) {
+    margin-right: calc(1vw * 16);
+  }
 `;
 
 const Icon = styled(FontAwesomeIcon)`

@@ -10,34 +10,33 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled(H4)`
-    color: ${colors.blue};
+  color: ${colors.blue};
 `;
 
-const Container = styled.div`
-    display: flex;
+const Container = styled.ul`
+  display: flex;
+  flex-direction: column;
 `;
 
-const Item = styled.div`
-    
-`;
+const Item = styled.li``;
 
 const Filter = ({}) => {
-/*
+  /*
 tee filter että saadaan vain yhden mökin tiedot näkyviin
 */
-}
+};
 
 const Amenities = () => {
-    return (  
-        <Wrapper>
-                <Title>Amenities</Title>
-                <Container>
-                    {cabin_data.cabins.map(cabin => (
-                    <Item key={cabin.id}>{cabin.amenities}
-                    </Item>))}
-                </Container>
-        </Wrapper>
-    );
+  return (
+    <Wrapper>
+      <Title>Amenities</Title>
+      <Container>
+        {cabin_data.cabins[0].amenities.map(amenities => (
+          <Item>{amenities}</Item>
+        ))}
+      </Container>
+    </Wrapper>
+  );
 };
- 
+
 export default Amenities;
