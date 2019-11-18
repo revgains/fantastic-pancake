@@ -1,10 +1,11 @@
 import React from "react";
-import { H1, H3, LP, MP, SP, Description } from "../theme/typography";
+import { H1, H3, LP, MP, Description } from "../theme/typography";
 import styled from "styled-components";
 import colors from "../theme/colors";
 import background from "../images/Rorvik-holidaycottages-Finland-hero_transparent.png";
+import Cottage from "../images/paviljonki_ilmasta.jpg";
+import Activity from "../images/Kalastusta_ahvenanmaalla.jpeg";
 
-import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -47,15 +48,15 @@ const WhiteP = styled(LP)`
 /* image and texts */
 
 const CabinImage = styled.div`
-  background-image: url(${background});
+  background-image: url(${Cottage});
+  background-repeat: no-repeat;
   width: 66%;
   height: 684px;
   float: left;
   margin-top: 8px;
   margin-bottom: 8px;
   @media (max-width: 768px) {
-    background-image: url(${background});
-    width: 100%;
+    background-image: url(${Cottage});
     height: 300px;
     float: center;
     margin-top: 8px;
@@ -110,20 +111,19 @@ const ActivityContent = styled.div`
     margin-top: 0px;
     margin-bottom: 8px;
     padding-bottom: 32px;
-    flex-direction: column;
-    display: flex;
   }
 `;
 
 const ActivityImage = styled.div`
-  background-image: url(${background});
+  background-image: url(${Activity});
+  background-repeat: no-repeat;
   width: 66%;
   height: 684px;
   float: right;
   margin-top: 8px;
   margin-bottom: 8px;
   @media (max-width: 768px) {
-    background-image: url(${background});
+    background-image: url(${Activity});
     width: 100%;
     height: 300px;
     float: center;
@@ -163,9 +163,8 @@ const Home = () => {
           </Link>
         </CabinText>
       </CabinContent>
-
+      <ActivityImage />
       <ActivityContent>
-        <ActivityImage />
         <CabinText>
           <Description>Enjoy Åhland</Description>
           <H3>Activities in Geta</H3>
@@ -178,6 +177,7 @@ const Home = () => {
           </Link>
         </CabinText>
       </ActivityContent>
+      
     </Wrapper>
   );
 };
