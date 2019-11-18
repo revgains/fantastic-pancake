@@ -1,10 +1,9 @@
 import React from "react";
-import { H1, H3, LP, MP, SP, Description } from "../theme/typography";
+import { H1, H3, LP, MP, Description } from "../theme/typography";
 import styled from "styled-components";
 import colors from "../theme/colors";
 import background from "../images/Rorvik-holidaycottages-Finland-hero_transparent.png";
 
-import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -110,8 +109,6 @@ const ActivityContent = styled.div`
     margin-top: 0px;
     margin-bottom: 8px;
     padding-bottom: 32px;
-    flex-direction: column;
-    display: flex;
   }
 `;
 
@@ -165,7 +162,6 @@ const Home = () => {
       </CabinContent>
 
       <ActivityContent>
-        <ActivityImage />
         <CabinText>
           <Description>Enjoy Åhland</Description>
           <H3>Activities in Geta</H3>
@@ -178,6 +174,7 @@ const Home = () => {
           </Link>
         </CabinText>
       </ActivityContent>
+      <ActivityImage />
     </Wrapper>
   );
 };
