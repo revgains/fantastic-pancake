@@ -26,7 +26,6 @@ export const H3 = styled.h3`
   color: ${colors.black};
   font-size: 1.953em;
   font-weight: 600;
-  margin: auto;
 `;
 
 export const H4 = styled.h4`

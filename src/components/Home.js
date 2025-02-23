@@ -81,6 +81,8 @@ const CabinContent = styled.div`
 `;
 
 const CabinText = styled.div`
+  display: flex;
+  flex-direction: column;
   padding-left: 24px;
   padding-top: 128px;
   padding-right: 32px;
@@ -99,8 +101,6 @@ const Link = styled.div`
 const ActivityContent = styled.div`
   background-color: ${colors.grey100};
   float: left;
-  width: 33%;
-  height: 684px;
   margin-top: 8px;
   margin-bottom: 8px;
   @media (max-width: 768px) {
@@ -117,17 +117,16 @@ const ActivityContent = styled.div`
 
 const ActivityImage = styled.div`
   background-image: url(${background});
+  background-color: ${colors.white};
   width: 66%;
   height: 684px;
   float: right;
-  margin-top: 8px;
   margin-bottom: 8px;
   @media (max-width: 768px) {
     background-image: url(${background});
     width: 100%;
     height: 300px;
     float: center;
-    margin-top: 8px;
     margin-bottom: 0px;
   }
 `;
