@@ -99,7 +99,7 @@ const Link = styled.div`
 const ActivityContent = styled.div`
   background-color: ${colors.grey100};
   float: left;
-  width: 33%;
+  width: 100%;
   height: 684px;
   margin-top: 8px;
   margin-bottom: 8px;
